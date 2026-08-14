@@ -1,173 +1,692 @@
 /* =========================================================
-   HURRICANE — WOLVDEN DARK STORM THEME
+   HURRICANE
+   REALISTIC DARK STORM — WOLVDEN
    ========================================================= */
 
-/* PAGE */
+
+/* =========================================================
+   COLOUR PALETTE
+   ========================================================= */
+
+:root {
+    --black: #070b0e;
+    --deep-black: #0a1014;
+    --storm-dark: #10191e;
+    --storm: #172329;
+    --storm-light: #202f36;
+
+    --steel-dark: #30434b;
+    --steel: #455b64;
+    --steel-light: #657b83;
+
+    --rain: #78919a;
+    --rain-bright: #a9c0c7;
+
+    --lightning: #bcd9e1;
+    --lightning-bright: #e3f2f5;
+
+    --text: #d5dfe2;
+    --text-soft: #a9b7bc;
+
+    --danger-red: #713c3c;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+   ========================================================= */
+
+html {
+    background: #070b0e !important;
+}
+
 body {
-    background-color: #080d10 !important;
-    color: #d5dee1 !important;
+    background-color: #070b0e !important;
+    color: var(--text) !important;
+
     background-image:
+        radial-gradient(
+            ellipse at 50% -15%,
+            rgba(105, 130, 139, 0.30) 0%,
+            rgba(55, 72, 79, 0.18) 28%,
+            transparent 68%
+        ),
         linear-gradient(
-            rgba(5, 9, 12, 0.80),
-            rgba(8, 13, 17, 0.94)
+            180deg,
+            rgba(6, 10, 13, 0.70),
+            rgba(7, 11, 14, 0.97)
         ) !important;
+
     background-attachment: fixed !important;
 }
 
 
-/* TEXT */
+/* =========================================================
+   STORM ATMOSPHERE
+   ========================================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            ellipse at 20% 10%,
+            rgba(122, 148, 157, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 80% 20%,
+            rgba(67, 91, 100, 0.13),
+            transparent 40%
+        );
+
+    opacity: 0.85;
+
+    z-index: 9999;
+}
+
+
+/* =========================================================
+   MAIN CONTENT CONTAINER
+   ========================================================= */
+
+#main {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(21, 32, 38, 0.97),
+            rgba(9, 15, 19, 0.98)
+        ) !important;
+
+    color: var(--text) !important;
+
+    border-left: 1px solid rgba(103, 126, 135, 0.35) !important;
+    border-right: 1px solid rgba(103, 126, 135, 0.35) !important;
+
+    box-shadow:
+        0 0 35px rgba(0, 0, 0, 0.90),
+        inset 0 0 45px rgba(0, 0, 0, 0.25) !important;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+body,
 p,
+span,
+div,
 td,
 th,
 li,
 label {
-    color: #d5dee1 !important;
+    color: var(--text);
 }
 
 
-/* LINKS */
+.text-muted,
+.text-secondary {
+    color: var(--text-soft) !important;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
 a {
-    color: #a9c7d0 !important;
+    color: var(--rain-bright) !important;
+
+    transition:
+        color 0.2s ease,
+        text-shadow 0.2s ease;
 }
 
 a:hover {
-    color: #e1f0f4 !important;
+    color: var(--lightning-bright) !important;
+
+    text-shadow:
+        0 0 5px rgba(188, 217, 225, 0.45);
 }
 
 
-/* HEADERS */
+/* =========================================================
+   HEADERS
+   ========================================================= */
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #b9d4dc !important;
-    text-shadow: 0 1px 3px #000 !important;
-}
+    color: var(--lightning) !important;
 
-
-/* TABLES */
-.table {
-    background-color: #10191e !important;
-    color: #d5dee1 !important;
-    border-color: #40545d !important;
-}
-
-.table th {
-    background-color: #263942 !important;
-    color: #dcebef !important;
-    border-color: #50656e !important;
-}
-
-.table td {
-    background-color: #111b20 !important;
-    color: #d5dee1 !important;
-    border-color: #30434b !important;
-}
-
-
-/* TABLE STRIPES */
-.table-striped > tbody > tr:nth-of-type(odd) > td {
-    background-color: #172329 !important;
-}
-
-
-/* TABLE HOVER */
-.table-hover > tbody > tr:hover > td {
-    background-color: #293d45 !important;
-}
-
-
-/* BUTTONS */
-.btn {
-    background-color: #263942 !important;
-    color: #d5dee1 !important;
-    border: 1px solid #526a73 !important;
-}
-
-.btn:hover {
-    background-color: #3a535d !important;
-    color: #ffffff !important;
-    border-color: #9bb5bd !important;
-}
-
-
-/* INPUTS */
-input,
-textarea,
-select {
-    background-color: #0c151a !important;
-    color: #d5dee1 !important;
-    border: 1px solid #40545d !important;
-}
-
-
-/* CHAT */
-#chatMessagePinned {
-    background-color: #182830 !important;
-    color: #d5dee1 !important;
-    border-color: #526973 !important;
-}
-
-
-/* BREADCRUMBS */
-.breadcrumb-nav {
-    background-color: #0e171c !important;
-    border-color: #40545d !important;
-}
-
-
-/* HORIZONTAL LINES */
-hr {
-    border-top: 1px solid #40545d !important;
-}
-
-
-/* IMAGES */
-img {
-    border-color: #40545d !important;
-}
-
-
-/* DROPDOWNS */
-.dropdown-menu {
-    background-color: #101a1f !important;
-    border-color: #40545d !important;
-}
-
-.dropdown-menu > li > a {
-    color: #d5dee1 !important;
-}
-
-.dropdown-menu > li > a:hover {
-    background-color: #293d45 !important;
-    color: #ffffff !important;
-}
-
-
-/* SCROLLBAR */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #080d10;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #344a53;
-    border: 1px solid #526873;
-}
-
-
-/* TEXT SELECTION */
-::selection {
-    background-color: #526d78 !important;
-    color: #ffffff !important;
+    text-shadow:
+        0 2px 3px rgba(0, 0, 0, 0.95),
+        0 0 10px rgba(174, 208, 218, 0.14) !important;
 }
 
 
 /* =========================================================
-   END
+   PANELS
+   ========================================================= */
+
+.panel,
+.panel-default {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30, 44, 51, 0.97),
+            rgba(13, 21, 26, 0.98)
+        ) !important;
+
+    color: var(--text) !important;
+
+    border:
+        1px solid var(--steel-dark) !important;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.65),
+        inset 0 0 18px rgba(0, 0, 0, 0.30) !important;
+}
+
+
+/* =========================================================
+   PANEL HEADERS
+   ========================================================= */
+
+.panel-heading {
+    background:
+        linear-gradient(
+            180deg,
+            #2b3f47,
+            #1a292f
+        ) !important;
+
+    color: var(--lightning) !important;
+
+    border-color:
+        var(--steel) !important;
+
+    text-shadow:
+        0 1px 2px #000 !important;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+table,
+.table {
+    background:
+        rgba(11, 18, 22, 0.96) !important;
+
+    color: var(--text) !important;
+
+    border-color:
+        var(--steel-dark) !important;
+
+    box-shadow:
+        0 5px 17px rgba(0, 0, 0, 0.55) !important;
+}
+
+
+/* TABLE HEADER */
+
+.table th,
+table th {
+    background:
+        linear-gradient(
+            180deg,
+            #293d45,
+            #19282e
+        ) !important;
+
+    color:
+        var(--lightning) !important;
+
+    border-color:
+        var(--steel) !important;
+
+    text-shadow:
+        0 1px 2px #000 !important;
+}
+
+
+/* TABLE CELLS */
+
+.table td,
+table td {
+    background:
+        rgba(13, 22, 27, 0.96) !important;
+
+    color:
+        var(--text) !important;
+
+    border-color:
+        #2d4048 !important;
+}
+
+
+/* STRIPES */
+
+.table-striped > tbody > tr:nth-of-type(odd) > td {
+    background:
+        rgba(25, 38, 44, 0.95) !important;
+}
+
+
+/* HOVER */
+
+.table-hover > tbody > tr:hover > td,
+.table tbody tr:hover td {
+    background:
+        rgba(54, 72, 80, 0.70) !important;
+
+    color:
+        #edf5f7 !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn,
+button,
+input[type="submit"],
+input[type="button"] {
+    background:
+        linear-gradient(
+            180deg,
+            #2c424b,
+            #17262d
+        ) !important;
+
+    color:
+        #d9e4e7 !important;
+
+    border:
+        1px solid #526b75 !important;
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.60),
+        inset 0 1px rgba(255,255,255,0.06) !important;
+
+    transition:
+        all 0.2s ease !important;
+}
+
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background:
+        linear-gradient(
+            180deg,
+            #3b555f,
+            #22353d
+        ) !important;
+
+    color:
+        #f0f8fa !important;
+
+    border-color:
+        #9bb5bd !important;
+
+    box-shadow:
+        0 0 10px rgba(175, 211, 220, 0.18),
+        0 4px 12px rgba(0,0,0,0.70) !important;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+input,
+textarea,
+select {
+    background:
+        #0a1318 !important;
+
+    color:
+        var(--text) !important;
+
+    border:
+        1px solid #40555e !important;
+
+    box-shadow:
+        inset 0 2px 7px rgba(0,0,0,0.65) !important;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    background:
+        #0d181e !important;
+
+    color:
+        #e0eaed !important;
+
+    border-color:
+        #819da6 !important;
+
+    outline:
+        none !important;
+
+    box-shadow:
+        0 0 8px rgba(159, 195, 205, 0.20),
+        inset 0 2px 7px rgba(0,0,0,0.65) !important;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.navbar,
+.navbar-default {
+    background:
+        linear-gradient(
+            180deg,
+            #1c2c33,
+            #0b1419
+        ) !important;
+
+    border-color:
+        #40555e !important;
+
+    box-shadow:
+        0 4px 16px rgba(0,0,0,0.75) !important;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color:
+        #b9c9ce !important;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover {
+    background:
+        #293f48 !important;
+
+    color:
+        #eef7f9 !important;
+}
+
+
+/* =========================================================
+   BREADCRUMBS
+   ========================================================= */
+
+.breadcrumb,
+.breadcrumb-nav {
+    background:
+        rgba(9, 16, 20, 0.94) !important;
+
+    border:
+        1px solid #344951 !important;
+
+    color:
+        var(--text-soft) !important;
+}
+
+
+.breadcrumb > li + li:before {
+    color:
+        #6d8188 !important;
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.alert {
+    background:
+        linear-gradient(
+            145deg,
+            #202f35,
+            #111c21
+        ) !important;
+
+    color:
+        var(--text) !important;
+
+    border:
+        1px solid #4a6069 !important;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.60) !important;
+}
+
+
+/* =========================================================
+   DROPDOWN MENUS
+   ========================================================= */
+
+.dropdown-menu {
+    background:
+        #0d171c !important;
+
+    border:
+        1px solid #435861 !important;
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,0.85) !important;
+}
+
+
+.dropdown-menu > li > a {
+    color:
+        var(--text) !important;
+}
+
+
+.dropdown-menu > li > a:hover {
+    background:
+        #2a4048 !important;
+
+    color:
+        #ffffff !important;
+}
+
+
+/* =========================================================
+   CHAT
+   ========================================================= */
+
+#chatMessagePinned {
+    background:
+        linear-gradient(
+            145deg,
+            #1d3038,
+            #111d22
+        ) !important;
+
+    color:
+        var(--text) !important;
+
+    border:
+        1px solid #536b74 !important;
+
+    box-shadow:
+        0 4px 14px rgba(0,0,0,0.65) !important;
+}
+
+
+/* =========================================================
+   HORIZONTAL LINES
+   ========================================================= */
+
+hr {
+    border:
+        0 !important;
+
+    border-top:
+        1px solid #40545d !important;
+
+    box-shadow:
+        0 1px rgba(255,255,255,0.03);
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+img {
+    border-color:
+        #435861 !important;
+}
+
+
+/* =========================================================
+   PROFILE / WOLF IMAGES
+   ========================================================= */
+
+.profile-img,
+.user-image {
+    border:
+        1px solid #5b727b !important;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,0.80) !important;
+}
+
+
+/* =========================================================
+   SPOILERS
+   ========================================================= */
+
+.spoiler {
+    background:
+        #0c161b !important;
+
+    color:
+        var(--text) !important;
+
+    border:
+        1px solid #40545d !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background:
+        #070c0f !important;
+
+    color:
+        #87979d !important;
+
+    border-top:
+        1px solid #344850 !important;
+}
+
+
+/* =========================================================
+   SUBTLE LIGHTNING FLASH
+   ========================================================= */
+
+@keyframes hurricaneFlash {
+
+    0%,
+    89%,
+    100% {
+        filter: brightness(1);
+    }
+
+    90% {
+        filter: brightness(1.04);
+    }
+
+    91% {
+        filter: brightness(1.12);
+    }
+
+    92% {
+        filter: brightness(1.02);
+    }
+
+    93% {
+        filter: brightness(1.07);
+    }
+
+    94% {
+        filter: brightness(1);
+    }
+}
+
+#main {
+    animation:
+        hurricaneFlash 16s infinite;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background:
+        #070b0e;
+}
+
+::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            180deg,
+            #405760,
+            #273a42
+        );
+
+    border:
+        1px solid #5b727a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:
+        #536c75;
+}
+
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+    background:
+        #526d78 !important;
+
+    color:
+        #ffffff !important;
+}
+
+
+/* =========================================================
+   END — HURRICANE
    ========================================================= */
