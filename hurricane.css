@@ -1,365 +1,81 @@
-/* =========================================================
-   STORM + FOREST LEAVES WOLVDEN DEN
-   Background: storm image
-   Navigation tiles: leaf image
-   ========================================================= */
+ /* =========================
+    DEN ACTIVITY SQUARES
+    ========================= */
 
-
-/* =========================
-   BACKGROUND
-   ========================= */
-
-html,
-body {
-    background: #071416 url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png")
-        center center / cover fixed no-repeat !important;
-    color: #e7eeee !important;
-}
-
-
-/* Keep the storm background fixed while scrolling */
-body {
-    background-attachment: fixed !important;
-}
-
-
-/* =========================
-   MAIN DEN AREA
-   ========================= */
-
-#main {
-    background: rgba(5, 13, 15, 0.82) !important;
-    border: 1px solid rgba(100, 135, 137, 0.35) !important;
-    border-radius: 22px !important;
-    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.75) !important;
-    padding: 14px !important;
-}
-
-
-/* =========================
-   SIDEBAR
-   ========================= */
-
-#sidebar {
-    background: rgba(3, 10, 12, 0.78) !important;
-    border-radius: 18px !important;
-}
-
-
-/* Sidebar cards */
-#sidebar .card {
-    background: rgba(8, 20, 22, 0.90) !important;
-    border-color: rgba(87, 122, 124, 0.45) !important;
-    border-radius: 14px !important;
-    color: #dce7e7 !important;
-}
-
-
-/* =========================
-   MAIN CARDS
-   ========================= */
-
-#main .card {
-    background: rgba(7, 18, 20, 0.88) !important;
-    border: 1px solid rgba(93, 128, 130, 0.45) !important;
-    border-radius: 18px !important;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.45) !important;
-}
-
-
-/* Card headers */
-.card-header,
-#main .card-header {
-    background: rgba(3, 11, 13, 0.94) !important;
-    color: #edf5f5 !important;
-    border: 0 !important;
-    border-radius: 15px 15px 0 0 !important;
-}
-
-
-/* =========================
-   PACK LEADER / DEN INFO
-   ========================= */
-
-.table {
-    background: rgba(6, 16, 18, 0.88) !important;
-    color: #e5eeee !important;
-    border-color: rgba(91, 125, 127, 0.35) !important;
-    border-radius: 16px !important;
-    overflow: hidden !important;
-}
-
-
-/* Table headers */
-.table th {
-    background: rgba(3, 11, 13, 0.95) !important;
-    color: #eaf4f4 !important;
-    border-color: rgba(91, 125, 127, 0.35) !important;
-}
-
-
-/* Table cells */
-.table td {
-    background: rgba(9, 21, 23, 0.82) !important;
-    color: #dce7e7 !important;
-    border-color: rgba(91, 125, 127, 0.25) !important;
-}
-
-
-/* Alternating rows */
-.table-striped tbody tr:nth-of-type(odd) td {
-    background: rgba(14, 30, 32, 0.82) !important;
-}
-
-
-/* =========================
-   DEN NAVIGATION IMAGES
-   ========================= */
-
-
-/*
-   These replace the six default navigation images
-   with YOUR leaf image.
-*/
-
+/* Dynasty */
 img[src$="packdynasty.png"] {
     content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: none !important;
+    margin: 0 !important;
 }
 
-img[src$="packoverview.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-}
-
-img[src$="breeding.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-}
-
-img[src$="pupsitting.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-}
-
+/* Nesting */
 img[src$="nesting.png"] {
     content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: none !important;
+    margin: 0 !important;
 }
 
+/* Overview */
+img[src$="packoverview.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: none !important;
+    margin: 0 !important;
+}
+
+/* Breeding */
+img[src$="breeding.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: none !important;
+    margin: 0 !important;
+}
+
+/* Pupsitting */
+img[src$="pupsitting.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: none !important;
+    margin: 0 !important;
+}
+
+/* Socializing */
 img[src$="socializing.png"] {
     content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-}
-
-
-/* Make the navigation images fit their boxes */
-img[src$="packdynasty.png"],
-img[src$="packoverview.png"],
-img[src$="breeding.png"],
-img[src$="pupsitting.png"],
-img[src$="nesting.png"],
-img[src$="socializing.png"] {
+    width: 100% !important;
+    height: 100% !important;
     object-fit: cover !important;
-}
-
-
-/* =========================
-   NAVIGATION TILE CONTAINERS
-   ========================= */
-
-#main a img {
-    border-radius: 0 !important;
-}
-
-
-/* Dark overlay effect around navigation */
-#main .row img {
-    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.65) !important;
-}
-
-
-/* =========================
-   BUTTONS
-   ========================= */
-
-.btn {
-    background: rgba(7, 24, 27, 0.95) !important;
-    color: #e5eeee !important;
-    border: 1px solid rgba(103, 145, 147, 0.55) !important;
-    border-radius: 10px !important;
-}
-
-
-.btn:hover {
-    background: rgba(20, 49, 51, 0.98) !important;
-    color: #ffffff !important;
-    border-color: rgba(140, 177, 178, 0.8) !important;
-}
-
-
-/* =========================
-   LINKS
-   ========================= */
-
-a {
-    color: #a9c8c8 !important;
-}
-
-
-a:hover {
-    color: #e5ffff !important;
-    text-decoration: none !important;
-}
-
-
-/* =========================
-   HEADERS
-   ========================= */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #e7f1f1 !important;
-}
-
-
-/* Den section headers */
-.table .subheader {
-    background: rgba(4, 14, 16, 0.94) !important;
-    color: #dceaea !important;
-}
-
-
-/* =========================
-   PACK NAME / DEN TITLE
-   ========================= */
-
-#main h1,
-#main h2 {
-    text-shadow: 0 2px 8px #000 !important;
-}
-
-
-/* =========================
-   WOLF CARDS / CAVE AREAS
-   ========================= */
-
-#main .wolf-card,
-#main .cave,
-#main .wolf {
-    background: rgba(7, 17, 19, 0.88) !important;
-    border-color: rgba(87, 122, 124, 0.35) !important;
-    border-radius: 14px !important;
-}
-
-
-/* =========================
-   FORM ELEMENTS
-   ========================= */
-
-.form-control,
-select,
-textarea,
-input {
-    background: rgba(4, 13, 15, 0.95) !important;
-    color: #e3eeee !important;
-    border: 1px solid rgba(91, 128, 130, 0.55) !important;
-    border-radius: 8px !important;
-}
-
-
-/* =========================
-   ALERTS
-   ========================= */
-
-.alert {
-    background: rgba(5, 17, 19, 0.92) !important;
-    color: #e4eeee !important;
-    border-radius: 12px !important;
-    border-color: rgba(91, 128, 130, 0.45) !important;
-}
-
-
-/* =========================
-   CHAT BOX
-   ========================= */
-
-#chatMessagePinned.s-chat-message__pinned {
-    background: rgba(5, 16, 18, 0.92) !important;
-    color: #e5eeee !important;
-    border-color: rgba(90, 127, 129, 0.45) !important;
-}
-
-
-/* =========================
-   PACK / CAVE HEADERS
-   ========================= */
-
-#main .table .top,
-#main .table .bottom {
-    background: rgba(4, 13, 15, 0.92) !important;
-    color: #e4eeee !important;
-}
-
-
-/* =========================
-   WOLF IMAGES
-   ========================= */
-
-#main img {
-    border-color: rgba(86, 119, 121, 0.4) !important;
-}
-
-
-/* =========================
-   ROUNDED FEATURED WOLF
-   ========================= */
-
-div.justify-content-between.mb-3 div {
-    border: none !important;
-}
-
-
-/* =========================
-   SCROLLBARS
-   ========================= */
-
-::-webkit-scrollbar {
-    width: 9px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(2, 9, 10, 0.8);
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(64, 94, 96, 0.9);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(100, 137, 139, 0.95);
-}
-
-
-/* =========================
-   MOBILE
-   ========================= */
-
-@media (max-width: 900px) {
-
-    body {
-        background-position: center center !important;
-    }
-
-    #main {
-        border-radius: 12px !important;
-        padding: 8px !important;
-    }
-
-    #sidebar {
-        border-radius: 12px !important;
-    }
-
-    #main .card {
-        border-radius: 12px !important;
-    }
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: none !important;
+    margin: 0 !important;
 }
