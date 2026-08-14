@@ -1,403 +1,313 @@
-/* =====================================================
-   HURRICANE - WOLVDEN
-   REALISTIC DARK STORM
-   ===================================================== */
+```css
+/* =========================================================
+   STORMY HURRICANE — WOLVDEN DEN CSS
+   Dark storm / ocean / leafy theme
+   ========================================================= */
 
 
-/* =========================
-   PAGE BACKGROUND
-   ========================= */
+/* ---------- MAIN BACKGROUND ---------- */
 
 body {
     background:
         linear-gradient(
-            rgba(0,0,0,0.48),
-            rgba(0,0,0,0.72)
+            rgba(7, 16, 20, 0.35),
+            rgba(3, 10, 14, 0.45)
         ),
-        url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Katrina_Storm.jpg")
-        center center / cover fixed no-repeat !important;
+        url("YOUR-HURRICANE-IMAGE-URL") center center / cover fixed no-repeat !important;
 
-    background-color: #05080b !important;
+    background-color: #071014 !important;
+    color: #d9e1e3 !important;
 }
 
 
-/* =========================
-   MAIN CONTENT
-   ========================= */
+/* ---------- MAIN PAGE ---------- */
 
-#main {
-    background: rgba(7,12,16,0.82) !important;
-    color: #fff !important;
+#page {
+    background: rgba(5, 12, 15, 0.88) !important;
+    border-left: 2px solid rgba(180, 200, 205, 0.35);
+    border-right: 2px solid rgba(180, 200, 205, 0.35);
+    box-shadow:
+        0 0 35px rgba(0, 0, 0, 0.9),
+        inset 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ---------- TEXT ---------- */
+
+body,
+#page,
+#page a,
+#page p,
+#page span {
+    color: #d8e0e2;
+}
+
+a {
+    color: #d5e5e8 !important;
+}
+
+a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(190, 220, 225, 0.8);
+}
+
+
+/* ---------- MAIN PANELS ---------- */
+
+.panel,
+.box,
+.table {
+    background:
+        linear-gradient(
+            rgba(8, 18, 22, 0.88),
+            rgba(3, 10, 13, 0.94)
+        ) !important;
+
+    border: 1px solid rgba(155, 180, 185, 0.35) !important;
 
     box-shadow:
-        0 0 35px rgba(0,0,0,0.9) !important;
+        inset 0 0 20px rgba(0, 0, 0, 0.65),
+        0 4px 15px rgba(0, 0, 0, 0.55);
+
+    color: #d8e0e2 !important;
 }
 
 
-/* =========================
-   SIDEBAR
-   ========================= */
+/* ---------- HEADERS ---------- */
 
-#sidebar {
-    background: rgba(5,9,12,0.94) !important;
-    color: #fff !important;
-}
-
-
-/* =========================
-   CARDS
-   ========================= */
-
-#main .card,
-#main .card-header,
-#main .card-body {
-    background:
-        rgba(13,21,26,0.91) !important;
-
-    color: #fff !important;
-
-    border-color:
-        #61757d !important;
-
-    border-radius:
-        18px !important;
-
-    box-shadow:
-        0 5px 18px rgba(0,0,0,0.75) !important;
-}
-
-
-/* =========================
-   TABLES
-   ========================= */
-
-#main table {
-    background:
-        rgba(10,17,21,0.92) !important;
-
-    color: #fff !important;
-
-    border-radius:
-        18px !important;
-
-    overflow:
-        hidden !important;
-
-    border:
-        1px solid #61757d !important;
-
-    box-shadow:
-        0 5px 18px rgba(0,0,0,0.75) !important;
-}
-
-
-#main table th {
-    background:
-        #263940 !important;
-
-    color:
-        #fff !important;
-
-    border-color:
-        #60747b !important;
-}
-
-
-#main table td {
-    background:
-        rgba(12,20,25,0.90) !important;
-
-    color:
-        #fff !important;
-
-    border-color:
-        #40545c !important;
-}
-
-
-/* =========================
-   ALL TEXT
-   ========================= */
-
-#main,
-#main p,
-#main span,
-#main div,
-#main td,
-#main th,
-#main li,
-#main label,
-#sidebar,
-#sidebar p,
-#sidebar span,
-#sidebar div,
-#sidebar li {
-    color: #fff !important;
-}
-
-
-/* =========================
-   LINKS
-   ========================= */
-
-#main a,
-#sidebar a {
-    color: #fff !important;
-}
-
-#main a:hover,
-#sidebar a:hover {
-    color: #fff !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.panel-heading,
+.box-header {
+    color: #e1eaec !important;
 
     text-shadow:
-        0 0 8px rgba(255,255,255,0.8) !important;
+        0 1px 3px #000,
+        0 0 8px rgba(170, 200, 205, 0.35);
 }
 
 
-/* =========================
-   LEAD WOLF
-   ========================= */
+/* ---------- PACK LEADER AREA ---------- */
 
-/* Wolvden uses .w-50 for the lead wolf image/link */
+#den-main,
+#den-main .panel {
+    background-color: rgba(5, 13, 16, 0.88) !important;
 
-.w-50 {
-    border-radius:
-        50% !important;
-
-    overflow:
-        hidden !important;
-}
-
-
-.w-50 img {
-    border-radius:
-        50% !important;
-
-    border:
-        4px solid #71858c !important;
+    border: 1px solid rgba(160, 185, 190, 0.35) !important;
 
     box-shadow:
-        0 0 18px rgba(0,0,0,0.9) !important;
+        inset 0 0 30px rgba(0, 0, 0, 0.75),
+        0 0 20px rgba(0, 0, 0, 0.65);
 }
 
 
-/* =========================
-   FEATURED WOLF
-   ========================= */
+/* ---------- NAVIGATION BOXES ----------
+   Pack Dynasty / Pack Overview / Breeding
 
-.featured-wolf {
-    border-radius:
-        18px !important;
+   Replace the three image URLs with your own
+   leaf images if desired.
+   ----------------------------------------- */
 
-    overflow:
-        hidden !important;
-}
-
-
-.featured-wolf img {
-    border-radius:
-        50% !important;
-
-    border:
-        4px solid #71858c !important;
-
-    box-shadow:
-        0 0 18px rgba(0,0,0,0.9) !important;
-}
-
-
-/* =========================
-   WOLF PREVIEW CARDS
-   ========================= */
-
-/* Actual card image elements */
-
-.form-row .card-img-top {
-    border-radius:
-        50% !important;
-
-    border:
-        4px solid #71858c !important;
-
-    box-shadow:
-        0 0 15px rgba(0,0,0,0.9) !important;
-}
-
-
-/* =========================
-   OTHER CARD IMAGES
-   ========================= */
-
-.card-img-top {
-    border-radius:
-        50% !important;
-}
-
-
-/* =========================
-   BUTTONS
-   ========================= */
-
-#main .btn,
-#main button {
+#den-main .box:nth-of-type(1) {
     background:
-        #1c2b31 !important;
+        linear-gradient(
+            rgba(3, 12, 14, 0.35),
+            rgba(3, 12, 14, 0.65)
+        ),
+        url("YOUR-LEAVES-IMAGE-URL") center / cover no-repeat !important;
 
-    color:
-        #fff !important;
-
-    border:
-        1px solid #71858c !important;
-
-    border-radius:
-        10px !important;
+    border: 1px solid rgba(170, 190, 190, 0.45) !important;
 }
 
 
-#main .btn:hover,
-#main button:hover {
+#den-main .box:nth-of-type(2) {
     background:
-        #354b54 !important;
+        linear-gradient(
+            rgba(3, 12, 14, 0.35),
+            rgba(3, 12, 14, 0.65)
+        ),
+        url("YOUR-LEAVES-IMAGE-URL") center / cover no-repeat !important;
 
-    color:
-        #fff !important;
-
-    border-color:
-        #fff !important;
+    border: 1px solid rgba(170, 190, 190, 0.45) !important;
 }
 
 
-/* =========================
-   INPUTS
-   ========================= */
-
-#main input,
-#main textarea,
-#main select {
+#den-main .box:nth-of-type(3) {
     background:
-        #080f13 !important;
+        linear-gradient(
+            rgba(3, 12, 14, 0.35),
+            rgba(3, 12, 14, 0.65)
+        ),
+        url("YOUR-LEAVES-IMAGE-URL") center / cover no-repeat !important;
 
-    color:
-        #fff !important;
-
-    border:
-        1px solid #61757d !important;
+    border: 1px solid rgba(170, 190, 190, 0.45) !important;
 }
 
 
-/* =========================
-   CHAT
-   ========================= */
+/* ---------- NAVIGATION TEXT ---------- */
 
-#chatMessagePinned.s-chat-message__pinned {
-    background:
-        rgba(10,18,23,0.94) !important;
-
-    color:
-        #fff !important;
-
-    border:
-        1px solid #61757d !important;
-
-    border-radius:
-        14px !important;
-}
-
-
-/* =========================
-   BREADCRUMBS
-   ========================= */
-
-.breadcrumb {
-    background:
-        rgba(7,13,17,0.90) !important;
-
-    border:
-        1px solid #61757d !important;
-
-    border-radius:
-        12px !important;
-}
-
-.breadcrumb a {
-    color:
-        #fff !important;
-}
-
-
-/* =========================
-   STORM BOX GLOW
-   ========================= */
-
-@keyframes stormGlow {
-
-    0%, 88%, 100% {
-        box-shadow:
-            0 5px 18px rgba(0,0,0,0.75);
-    }
-
-    90% {
-        box-shadow:
-            0 5px 18px rgba(0,0,0,0.75),
-            0 0 12px rgba(220,240,245,0.25);
-    }
-
-    92% {
-        box-shadow:
-            0 5px 18px rgba(0,0,0,0.75),
-            0 0 24px rgba(220,240,245,0.38);
-    }
-
-    94% {
-        box-shadow:
-            0 5px 18px rgba(0,0,0,0.75);
-    }
-}
-
-
-#main .card,
-#main table {
-    animation:
-        stormGlow 13s infinite;
-}
-
-
-/* =========================
-   HEADINGS
-   ========================= */
-
-#main h1,
-#main h2,
-#main h3,
-#main h4,
-#main h5,
-#main h6 {
-    color:
-        #fff !important;
+#den-main .box a {
+    color: #edf4f5 !important;
 
     text-shadow:
-        0 0 8px rgba(255,255,255,0.25);
+        0 2px 4px #000,
+        0 0 7px rgba(0, 0, 0, 0.9);
+}
+
+#den-main .box:hover {
+    filter: brightness(1.18);
+
+    box-shadow:
+        0 0 15px rgba(170, 200, 205, 0.25),
+        inset 0 0 20px rgba(0, 0, 0, 0.55);
+
+    transition: 0.3s ease;
 }
 
 
-/* =========================
-   HORIZONTAL LINES
-   ========================= */
+/* ---------- SECTION HEADERS ---------- */
 
-#main hr {
-    border-top:
-        1px solid #61757d !important;
-}
-
-
-/* =========================
-   FOOTER
-   ========================= */
-
-footer {
+#den-main h3,
+#den-main h4 {
     background:
-        rgba(3,7,10,0.95) !important;
+        linear-gradient(
+            90deg,
+            rgba(2, 9, 12, 0.98),
+            rgba(12, 25, 29, 0.92),
+            rgba(2, 9, 12, 0.98)
+        ) !important;
 
-    color:
-        #fff !important;
+    border: 1px solid rgba(160, 185, 190, 0.3);
+
+    color: #e0e8e9 !important;
 }
+
+
+/* ---------- WOLF CARDS ---------- */
+
+.wolf,
+.wolf-card,
+.wolfcard {
+    background:
+        rgba(7, 15, 18, 0.9) !important;
+
+    border: 1px solid rgba(150, 175, 180, 0.3) !important;
+
+    box-shadow:
+        inset 0 0 15px rgba(0, 0, 0, 0.7),
+        0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ---------- WOLF CARD HOVER ---------- */
+
+.wolf:hover,
+.wolf-card:hover,
+.wolfcard:hover {
+    border-color: rgba(200, 215, 218, 0.55) !important;
+
+    box-shadow:
+        0 0 15px rgba(170, 195, 200, 0.18),
+        inset 0 0 15px rgba(0, 0, 0, 0.65);
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+button,
+.btn {
+    background:
+        linear-gradient(
+            rgba(20, 34, 38, 0.95),
+            rgba(5, 13, 16, 0.95)
+        ) !important;
+
+    border: 1px solid rgba(160, 185, 190, 0.4) !important;
+
+    color: #e0e8e9 !important;
+
+    box-shadow:
+        inset 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+button:hover,
+.btn:hover {
+    background:
+        linear-gradient(
+            rgba(40, 55, 60, 0.95),
+            rgba(8, 18, 22, 0.95)
+        ) !important;
+
+    color: #ffffff !important;
+}
+
+
+/* ---------- INPUTS ---------- */
+
+input,
+textarea,
+select {
+    background: rgba(3, 10, 13, 0.9) !important;
+
+    border: 1px solid rgba(150, 175, 180, 0.35) !important;
+
+    color: #dce5e7 !important;
+}
+
+
+/* ---------- SCROLLBARS ---------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050c0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #34464b;
+    border: 2px solid #071014;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #60767c;
+}
+
+
+/* ---------- IMAGE EFFECT ---------- */
+
+img {
+    filter: saturate(0.85) contrast(1.05);
+}
+
+img:hover {
+    filter: saturate(1) contrast(1.05);
+}
+
+
+/* ---------- SUBTLE STORM EFFECT ----------
+   Makes the page feel colder/darker without
+   interfering with the actual background image.
+   --------------------------------------------- */
+
+#page:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            rgba(130, 155, 160, 0.035),
+            rgba(0, 0, 0, 0.12)
+        );
+
+    z-index: 9999;
+}
+```
