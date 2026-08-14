@@ -1,16 +1,24 @@
-/* this code is outdated, messy, and unsupported. in the event of an issue, it is unlikely to be revisited. */
+/* =========================================================
+   WOLVDEN DIVA THEME — FOREST / LEAF
+   Main colors:
+   #19382A — deep forest
+   #235F38 — forest green
+   ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@400&display=swap');
+
+/* -------------------------
+   CURSOR
+   ------------------------- */
 
 * {
     cursor: url('https://cdn.cursors-4u.net/previews/unborn-8-0-grey-pointer-15926729-32.webp') 32 32, auto !important;
 }
 
-
-/* =========================================
-   BACKGROUND
-   ========================================= */
+/* -------------------------
+   BODY / BACKGROUND
+   ------------------------- */
 
 body {
     background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png") !important;
@@ -19,27 +27,30 @@ body {
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
 
-    font-family: parkinsans, serif;
+    font-family: Parkinsans, serif;
     text-transform: lowercase;
     font-size: 14px !important;
 
-    filter: grayscale(0.15) brightness(0.95) contrast(1.05) !important;
+    /* Keeps the image natural instead of making the whole page dark */
+    filter: none !important;
+
+    color: #19382A !important;
 }
 
-
-/* =========================================
-   NAVBAR
-   ========================================= */
+/* -------------------------
+   MAIN NAVBAR
+   ------------------------- */
 
 .navbar-main {
-    background-color: #1b1616 !important;
+    background-color: #19382A !important;
     height: 2.5rem !important;
+    border-bottom: 2px solid #235F38 !important;
 }
 
 .mr-auto .nav-link {
-    color: #d2b4c4 !important;
+    color: #F1EBDD !important;
     font-size: 25px !important;
-    font-family: margarine, serif;
+    font-family: Margarine, serif;
     text-transform: lowercase !important;
     margin-left: 8px;
 }
@@ -47,10 +58,12 @@ body {
 .mr-auto .nav-link:hover,
 .navbar-status a,
 .breadcrumb-item a:hover {
-    color: #92a3a3 !important;
+    color: #C8D9C6 !important;
     background: none !important;
     transition: 0.3s ease all !important;
 }
+
+/* Hide original icons */
 
 i.fa.fa-paw,
 i.fa.fa-globe-americas,
@@ -64,18 +77,17 @@ i.fa.fa-question-circle {
     opacity: 0 !important;
 }
 
+/* -------------------------
+   NAV STATUS
+   ------------------------- */
+
 .navbar-status {
-    background-color: #3b3131 !important;
+    background-color: #235F38 !important;
 }
 
-
-/* =========================================
-   BREADCRUMBS
-   ========================================= */
-
 .breadcrumb-nav {
-    background-color: darkslategrey !important;
-    border: 2px solid #203838;
+    background-color: rgba(35, 95, 56, 0.94) !important;
+    border: 2px solid #19382A !important;
     border-radius: 5rem;
     margin: 6px;
 }
@@ -84,7 +96,7 @@ i.fa.fa-question-circle {
 .breadcrumb-item a,
 .navbar-text,
 .alert-info {
-    color: seashell !important;
+    color: #F1EBDD !important;
 }
 
 .breadcrumb-item::before,
@@ -92,144 +104,119 @@ i.text-muted,
 #sidebar h3,
 #sidebar h4,
 tr.pup {
-    color: darkslategrey !important;
+    color: #19382A !important;
     font-size: 14px !important;
 }
 
-
-/* =========================================
+/* -------------------------
    SIDEBAR
-   ========================================= */
-
-#sidebar .card {
-    background-color: seashell !important;
-    padding: 0 !important;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: #1b1616 !important;
-    border-radius: 1rem !important;
-    border: none !important;
-}
+   ------------------------- */
 
 #sidebar {
-    background-color: #3b3131 !important;
-    border: 2px solid #1b1616 !important;
+    background-color: rgba(25, 56, 42, 0.90) !important;
+    border: 2px solid #19382A !important;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
+#sidebar .card {
+    background-color: #F4F0E7 !important;
+    padding: 0 !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #19382A !important;
+    border-radius: 1rem !important;
+    border: 2px solid #235F38 !important;
+}
+
 #sidebar .small span {
-    color: #1b1616 !important;
+    color: #19382A !important;
     font-size: 12px !important;
     margin-bottom: 6px !important;
     margin-top: 6px !important;
 }
 
-
-/* =========================================
-   GENERAL COLORS
-   ========================================= */
+/* -------------------------
+   COLORED ALERTS / BOXES
+   ------------------------- */
 
 .bg-info {
-    background-color: darkslategrey !important;
-    border: 2px solid #203838;
+    background-color: #235F38 !important;
+    border: 2px solid #19382A !important;
     border-radius: 5rem;
+    color: #F4F0E7 !important;
 }
 
 .bg-danger {
-    background-color: #d2b4c4 !important;
-    border: 2px solid #bb8fa7;
+    background-color: #D8E5D5 !important;
+    border: 2px solid #235F38 !important;
     border-radius: 5rem;
+    color: #19382A !important;
 }
 
 .bg-primary {
-    background-color: #8b4970 !important;
-    border: 2px solid #663451;
+    background-color: #235F38 !important;
+    border: 2px solid #19382A !important;
     border-radius: 5rem;
+    color: #F4F0E7 !important;
 }
 
 .bg-warning {
-    background-image: url("https://i.ibb.co/wFHCDgv2/IMG-3927.gif") !important;
-    border: 2px solid #203838;
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border: 2px solid #19382A !important;
     border-radius: 5rem;
+    color: #19382A !important;
 }
 
 .bg-success {
-    background-color: #92a3a3 !important;
-    border: 2px solid #698080;
+    background-color: #C8D9C6 !important;
+    border: 2px solid #235F38 !important;
     border-radius: 5rem;
+    color: #19382A !important;
 }
 
-
-/* =========================================
-   MAIN
-   ========================================= */
+/* -------------------------
+   MAIN CONTENT
+   ------------------------- */
 
 #main {
-    background: seashell !important;
-    border: 2px solid #beb6b1 !important;
+    background: rgba(244, 240, 231, 0.96) !important;
+    border: 2px solid #235F38 !important;
+    color: #19382A !important;
 }
 
 #main .card {
-    border: none !important;
-    background: seashell !important;
+    border: 2px solid #235F38 !important;
+    background: #F4F0E7 !important;
     margin-bottom: 0.5rem;
 }
 
-h1 {
-    color: #1b1616 !important;
-    font-size: 20px !important;
-    font-family: margarine, serif !important;
-    margin-left: 1rem;
-}
-
-
-/* =========================================
+/* -------------------------
    ALERTS
-   ========================================= */
+   ------------------------- */
 
 .alert {
     border-radius: 5rem !important;
-    color: #1b1616;
+    color: #19382A !important;
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
-    border: 2px solid #663451 !important;
-    background-color: #8b4970 !important;
+    border: 2px solid #19382A !important;
+    background-color: #C8D9C6 !important;
     text-align: center !important;
 }
 
 .alert-danger {
-    border: 2px solid #bb8fa7 !important;
-    background-color: #d2b4c4 !important;
-    color: #663451 !important;
+    border: 2px solid #235F38 !important;
+    background-color: #D8E5D5 !important;
+    color: #19382A !important;
     text-align: center !important;
 }
 
-.alert-link {
-    color: #bcc7c7 !important;
-}
-
-.alert-link:hover {
-    color: seashell !important;
-    transition: color 0.2s !important;
-}
-
-.alert-success,
-#btnchatsettings select.form-control {
-    color: seashell !important;
-    background-color: #566f6f !important;
-    border-color: darkslategrey !important;
-    text-align: center !important;
-}
-
-.alert-success::before {
-    opacity: 0 !important;
-}
-
-
-/* =========================================
+/* -------------------------
    PROGRESS
-   ========================================= */
+   ------------------------- */
 
 .progress {
     color: transparent;
@@ -237,34 +224,66 @@ h1 {
     margin-bottom: 0.5rem !important;
 }
 
+/* -------------------------
+   HEADINGS
+   ------------------------- */
 
-/* =========================================
+h1 {
+    color: #19382A !important;
+    font-size: 20px !important;
+    font-family: Margarine, serif !important;
+    margin-left: 1rem;
+}
+
+h3 a {
+    font-family: Margarine, serif !important;
+    font-size: 20px !important;
+    color: #235F38 !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* -------------------------
    TABLES
-   ========================================= */
+   ------------------------- */
 
 .border-none .striped,
 .border-none .striped tr {
     background: transparent !important;
-    color: #1b1616 !important;
+    color: #19382A !important;
 }
 
 .table {
-    background-color: seashell !important;
+    background-color: #F4F0E7 !important;
+    color: #19382A !important;
 }
 
 .table th {
-    color: #ddc6d2 !important;
-    background-color: #1b1616;
+    color: #F4F0E7 !important;
+    background-color: #19382A !important;
     padding: 0.6rem 0.6rem 0.6rem 1rem !important;
 }
 
 .table th a,
 .navbar-status a:hover {
-    color: #beb6b1 !important;
+    color: #D8E5D5 !important;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: transparent !important;
+}
+
+.table .left {
+    background-color: #D8E5D5 !important;
+    border-radius: 0 !important;
+}
+
+.table .bottom,
+.table tfoot td {
+    color: #19382A !important;
+    background-color: transparent;
+    border-radius: 0 0 10px 10px !important;
+    text-align: center;
 }
 
 .table thead th,
@@ -272,24 +291,500 @@ tbody {
     border: 1px solid transparent !important;
 }
 
-.table .left {
-    background-color: #bcc7c7 !important;
-    border-radius: 0 !important;
-}
+/* -------------------------
+   LINKS
+   ------------------------- */
 
-.table .bottom,
-.table tfoot td {
-    color: #1b1616 !important;
+a,
+.s-chat-message__pinned,
+body.theme_dark,
+.text-td-bottom {
+    color: #235F38 !important;
     background-color: transparent;
-    border-radius: 0 0 10px 10px !important;
-    text-align: center;
 }
 
-.top {
+a:hover {
+    color: #19382A !important;
+    transition: 0.3s ease all !important;
+    text-decoration: none !important;
+}
+
+/* -------------------------
+   TABS
+   ------------------------- */
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #D8E5D5 !important;
+    border: 2px solid #235F38 !important;
+    color: #19382A !important;
+    border-radius: 0.5rem;
+}
+
+.nav-tabs .nav-link,
+.nav-tabs {
+    border: none !important;
+    color: #235F38 !important;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-tabs:hover .nav-link:hover {
+    color: #F4F0E7 !important;
+    background-color: #235F38 !important;
+    border-radius: 0.5rem;
+    border: 0.15rem solid #19382A !important;
+    transition: none !important;
+}
+
+/* -------------------------
+   BUTTONS
+   ------------------------- */
+
+.btn-success,
+button#submitBtn {
+    color: #F4F0E7 !important;
+    background-color: #235F38 !important;
+    border-color: #19382A !important;
+    font-family: Margarine, serif;
+    text-transform: lowercase;
+    border-radius: 5rem !important;
+}
+
+.btn-success:hover,
+button#submitBtn:hover {
+    filter: brightness(1.15) !important;
+    transition: filter 0.2s !important;
+    box-shadow: none !important;
+}
+
+.btn-danger,
+.btn-warning {
+    color: #F4F0E7 !important;
+    background-color: #235F38 !important;
+    border-color: #19382A !important;
+    text-transform: lowercase !important;
+}
+
+.btn-danger:hover,
+.btn-warning:hover {
+    filter: brightness(1.15) !important;
+    transition: filter 0.2s !important;
+    box-shadow: none !important;
+}
+
+.btn,
+.btn:hover {
+    border-radius: 5rem !important;
+    box-shadow: none !important;
+    border: 2px solid #19382A;
+}
+
+.btn-info {
+    color: #19382A !important;
+    background-color: #C8D9C6 !important;
+    border-color: #235F38 !important;
+    text-transform: lowercase !important;
+    border-radius: 5rem !important;
+}
+
+.btn-info:hover {
+    filter: brightness(0.95);
+    transition: filter 0.2s !important;
+}
+
+/* -------------------------
+   CARDS
+   ------------------------- */
+
+.card-header,
+#footer,
+#dencards {
+    background-color: #D8E5D5 !important;
+    border: 2px solid #235F38 !important;
+    color: #19382A !important;
+    border-top-left-radius: 0 !important;
+    font-size: 14px !important;
+}
+
+.card-body {
+    background-color: #F4F0E7 !important;
+    border-radius: 1rem !important;
+    font-size: 14px !important;
+    color: #19382A !important;
+}
+
+.card-body.pb-1 {
     border-radius: 0 !important;
-    padding-top: 0.3rem !important;
-    padding-bottom: 0.3rem;
-    padding-left: 1rem !important;
+    padding: 1rem;
+    margin-top: 0;
+    background-color: #C8D9C6 !important;
+    outline: 2px solid #235F38 !important;
+}
+
+/* -------------------------
+   SPECIAL CARDS
+   ------------------------- */
+
+.bg-dark,
+.bg-light {
+    background-color: #F4F0E7 !important;
+    border-color: #235F38 !important;
+    color: #19382A !important;
+}
+
+.order-lg-2 > .mb-3 .card-body {
+    border: 2px solid #235F38 !important;
+    background-color: #E7E4D9 !important;
+}
+
+/* -------------------------
+   TEXT
+   ------------------------- */
+
+.m-0 {
+    font-size: 14px !important;
+    font-family: Margarine, serif !important;
+    margin-left: 3px !important;
+    color: #235F38 !important;
+}
+
+.m-0:hover {
+    background: transparent !important;
+    color: #19382A !important;
+    transition: color 0.2s !important;
+    box-shadow: none !important;
+}
+
+.small,
+small {
+    font-size: 12px !important;
+    color: #235F38 !important;
+    font-family: Margarine !important;
+}
+
+p {
+    font-size: 12px !important;
+}
+
+.text-success,
+.text-success:hover,
+.text-danger:hover,
+.text-danger,
+a.text-danger,
+a.text-danger:hover {
+    color: #235F38 !important;
+    text-transform: lowercase !important;
+}
+
+/* -------------------------
+   FOOTER
+   ------------------------- */
+
+#footer a {
+    color: #235F38 !important;
+    padding-top: 5px !important;
+}
+
+/* -------------------------
+   BREADCRUMB SIGNATURE
+   ------------------------- */
+
+.breadcrumb::after {
+    content: '༻ css by #27126';
+    position: absolute;
+    right: 6%;
+    color: #D8E5D5;
+    font-family: Margarine, serif;
+    font-weight: 800;
+}
+
+/* -------------------------
+   IMAGES
+   ------------------------- */
+
+img {
+    max-width: 100% !important;
+    filter: none !important;
+}
+
+img.float-left.mr-2,
+.w-50 a img,
+.featured-wolf img,
+.mb-3 .card-img-top {
+    border-radius: 0;
+    outline: 3px solid #19382A;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/* =========================================================
+   🌿 WOLVDEN SIX MAIN SECTIONS
+   Dynasty
+   Nesting
+   Overview
+   Breeding
+   Pupsitting
+   Socializing
+   ========================================================= */
+
+/*
+   Your leaf image is used for ALL SIX icons.
+*/
+
+img[src$="packdynasty.png"],
+img[src$="nesting.png"],
+img[src$="packoverview.png"],
+img[src$="breeding.png"],
+img[src$="pupsitting.png"],
+img[src$="socializing.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+
+    width: 40% !important;
+    height: auto !important;
+
+    margin-left: 5rem !important;
+    margin-bottom: 2.5rem !important;
+
+    filter: none !important;
+
+    border-radius: 12px !important;
+    outline: 3px solid #19382A !important;
+}
+
+/* Give the section cards a lighter green background */
+
+img[src$="packdynasty.png"] + *,
+img[src$="nesting.png"] + *,
+img[src$="packoverview.png"] + *,
+img[src$="breeding.png"] + *,
+img[src$="pupsitting.png"] + *,
+img[src$="socializing.png"] + * {
+    color: #19382A !important;
+}
+
+/* -------------------------
+   PACK LEADER
+   ------------------------- */
+
+span#lblPackLeaderTitle {
+    font-size: 0 !important;
+    margin-left: 2px;
+}
+
+span#lblPackLeaderTitle::after {
+    font-size: 17.5px !important;
+    font-family: Margarine, serif;
+    color: #235F38;
+    content: 'the iconic' !important;
+}
+
+/* -------------------------
+   CHAT
+   ------------------------- */
+
+.s-chat-message:nth-child(odd) {
+    background-color: #F4F0E7 !important;
+    color: #19382A !important;
+    text-transform: none !important;
+    font-size: 14px !important;
+}
+
+.s-chat-message:nth-child(even),
+.s-chat-message:nth-child(2n) {
+    background-color: #D8E5D5 !important;
+    color: #19382A !important;
+    text-transform: none !important;
+    font-size: 14px !important;
+}
+
+a.s-chat__username,
+.s-chat-message_timestamp,
+.s-chat-sidebar .s-chat-message_timestamp {
+    color: #235F38 !important;
+    font-size: 14px !important;
+    text-transform: none !important;
+}
+
+a.s-chat__username:hover,
+.s-chat-error_screen p,
+#context-chatMenu .chatMenu-option,
+#fraChatSettingsMenu .chatMenu-option {
+    color: #19382A !important;
+    text-decoration: none !important;
+}
+
+#chatMessagePinned.s-chat-message__pinned {
+    background-color: #C8D9C6 !important;
+    border-bottom: 2px solid #235F38 !important;
+    color: #19382A !important;
+}
+
+#fra_chatContainer #txtChatInput {
+    background-color: #F4F0E7 !important;
+    border: 2px solid #235F38 !important;
+    color: #19382A !important;
+    text-transform: none !important;
+}
+
+#txtChatContainer #lblCharacterCounter {
+    color: #235F38 !important;
+}
+
+input#btnChatSend,
+button.btn-chat-connect.btn.btn-info {
+    background-color: #19382A !important;
+    border-color: #235F38 !important;
+    color: #F4F0E7 !important;
+    font-family: Margarine, serif !important;
+    text-transform: lowercase !important;
+}
+
+input#btnChatSend:hover,
+button.btn-chat-connect.btn.btn-info:hover {
+    filter: brightness(1.15);
+    transition: filter 0.2s !important;
+}
+
+.s-chat-sidebar #label_currentChannel {
+    background-color: #D8E5D5 !important;
+    border: 2px solid #235F38 !important;
+    color: #19382A !important;
+    text-transform: lowercase !important;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+    color: #F4F0E7 !important;
+    background-color: #235F38 !important;
+    text-transform: lowercase !important;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+    background-color: #C8D9C6 !important;
+    color: #19382A !important;
+    border: 2px solid #235F38 !important;
+}
+
+/* -------------------------
+   CHAT SETTINGS / INPUTS
+   ------------------------- */
+
+input.form-control,
+input.form-control:focus,
+select.form-control,
+select.form-control:focus,
+textarea.form-control,
+textarea.form-control:focus {
+    background-color: #F4F0E7 !important;
+    border: 2px solid #235F38 !important;
+    color: #19382A !important;
+    font-size: 14px !important;
+    text-transform: lowercase !important;
+}
+
+body.theme_dark .custom-control-label:before,
+.custom-control-label:before {
+    border-color: #19382A !important;
+    background-color: #D8E5D5 !important;
+    color: #235F38 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label:before {
+    color: #F4F0E7;
+    border-color: #19382A !important;
+    background-color: #235F38 !important;
+}
+
+/* -------------------------
+   CHAT MENTION
+   ------------------------- */
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mentioned {
+    background-color: #C8D9C6 !important;
+    border-left: 3px solid #235F38 !important;
+}
+
+/* -------------------------
+   MISC
+   ------------------------- */
+
+.alert-link {
+    color: #235F38 !important;
+}
+
+.alert-link:hover {
+    color: #19382A !important;
+    transition: color 0.2s !important;
+}
+
+.alert-info .mr-2 {
+    opacity: 0 !important;
+    margin-left: -30px !important;
+}
+
+.bookmarks li,
+button#btnchatsettings,
+#card-user b {
+    color: #235F38 !important;
+}
+
+.badge-danger {
+    color: #F4F0E7 !important;
+    font-size: 0.75rem !important;
+    background-color: #235F38 !important;
+    margin-bottom: 0.05rem !important;
+}
+
+.badge-info {
+    color: #F4F0E7 !important;
+    background-color: #19382A !important;
+}
+
+.p-2 {
+    margin: 6px;
+    padding: 2px !important;
+    outline: 2px solid #235F38;
+    background-color: #C8D9C6 !important;
+    border-radius: 0 !important;
+    max-width: 80% !important;
+}
+
+.border-none .card {
+    background: none !important;
+}
+
+.alert-success::before {
+    opacity: 0 !important;
+}
+
+.alert-success,
+#btnchatsettings select.form-control {
+    color: #F4F0E7 !important;
+    background-color: #235F38 !important;
+    border-color: #19382A !important;
+    text-align: center !important;
+}
+
+.bg-bar-input {
+    background: #19382A !important;
+}
+
+/* -------------------------
+   HEADER / MISC
+   ------------------------- */
+
+#header .navbar-status .nav-item {
+    line-height: 20px !important;
+}
+
+#fraChatSettingsMenu a,
+#fraChatSettingsMenu label {
+    color: #19382A !important;
+}
+
+button#btnPreviewDisplay.btn.btn-info.btn-lg {
+    width: 200px !important;
 }
 
 .text-center.card-body {
@@ -303,553 +798,30 @@ table a.h4 {
 }
 
 table th a:hover {
-    color: #a7b5b4 !important;
+    color: #235F38 !important;
     transition: 0.3s ease all !important;
-}
-
-
-/* =========================================
-   IMAGES
-   ========================================= */
-
-/* DO NOT grayscale the images */
-img {
-    max-width: 100% !important;
-}
-
-
-/* =========================================
-   SIX DEN ACTIVITY IMAGES
-   ========================================= */
-
-/* PACK DYNASTY */
-img[src$="packdynasty.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-    filter: none !important;
-}
-
-
-/* NESTING */
-img[src$="nesting.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-    filter: none !important;
-}
-
-
-/* PACK OVERVIEW */
-img[src$="packoverview.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-    filter: none !important;
-}
-
-
-/* BREEDING */
-img[src$="breeding.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-    filter: none !important;
-}
-
-
-/* PUPSITTING */
-img[src$="pupsitting.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-    filter: none !important;
-}
-
-
-/* SOCIALIZING */
-img[src$="socializing.png"] {
-    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
-    filter: none !important;
-}
-
-
-/* =========================================
-   CARD HEADERS
-   ========================================= */
-
-.card-header,
-#footer,
-#dencards {
-    background-color: #beb6b1 !important;
-    border: 2px solid #807b77 !important;
-    color: #1b1616 !important;
-    border-top-left-radius: 0 !important;
-    font-size: 14px !important;
-}
-
-.card-body {
-    background-color: seashell !important;
-    border-radius: 1rem !important;
-    font-size: 14px !important;
-}
-
-.card-body.pb-1 {
-    border-radius: 0 !important;
-    padding: 1rem;
-    margin-top: 0;
-    background-color: #566f6f !important;
-    outline: 2px solid darkslategrey !important;
-}
-
-
-/* =========================================
-   BUTTONS
-   ========================================= */
-
-.btn-success,
-button#submitBtn {
-    color: #1b1616 !important;
-    background-color: #d2b4c4 !important;
-    border-color: #bb8fa7 !important;
-    font-family: margarine, serif;
-    text-transform: lowercase;
-    border-radius: 5rem !important;
-}
-
-.btn-success:hover,
-button#submitBtn:hover {
-    filter: brightness(0.85) contrast(1.25) !important;
-    transition: filter 0.2s !important;
-    box-shadow: none !important;
-}
-
-.btn-danger,
-.btn-warning {
-    color: #bcc7c7 !important;
-    background-color: #8b4970 !important;
-    border-color: #663451 !important;
-    text-transform: lowercase !important;
-}
-
-.btn-danger:hover,
-.btn-warning:hover {
-    filter: brightness(1.15) !important;
-    transition: filter 0.2s !important;
-    box-shadow: none !important;
-}
-
-.btn,
-btn:hover {
-    border-radius: 5rem !important;
-    box-shadow: none !important;
-    border: 2px solid;
-}
-
-.btn-info {
-    color: #1b1616 !important;
-    background-color: #bcc7c7 !important;
-    border-color: #92a3a3 !important;
-    text-transform: lowercase !important;
-    border-radius: 5rem !important;
-}
-
-.btn-info:hover {
-    filter: brightness(0.9);
-    transition: filter 0.2s !important;
-}
-
-
-/* =========================================
-   LINKS
-   ========================================= */
-
-a,
-.s-chat-message__pinned,
-body.theme_dark,
-.text-td-bottom {
-    color: #1b1616 !important;
-    background-color: transparent;
-}
-
-a:hover {
-    color: #3b3131 !important;
-    transition: 0.3s ease all !important;
-    text-decoration: none !important;
-}
-
-
-/* =========================================
-   NAV TABS
-   ========================================= */
-
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
-    background-color: transparent;
-    border: none !important;
-    color: #3b3131 !important;
-}
-
-.nav-tabs .nav-link,
-.nav-tabs {
-    border: none !important;
-    color: #566f6f !important;
-    border-radius: 0.5rem;
-    border-bottom: 1px solid transparent;
-}
-
-.nav-tabs:hover .nav-link:hover {
-    color: darkslategrey !important;
-    background-color: #bcc7c7;
-    border-radius: 0.5rem;
-    border: 0.15rem solid #a3adad !important;
-    transition: none !important;
-}
-
-
-/* =========================================
-   TEXT
-   ========================================= */
-
-.m-0 {
-    font-size: 14px !important;
-    font-family: margarine, serif !important;
-    margin-left: 3px !important;
-    color: #d2b4c4 !important;
-}
-
-.m-0:hover {
-    background: transparent !important;
-    color: #bb8fa7 !important;
-    transition: color 0.2s !important;
-    box-shadow: none !important;
-}
-
-.small,
-small {
-    font-size: 12px !important;
-    color: #3b3131 !important;
-    font-family: margarine !important;
-}
-
-p {
-    font-size: 12px !important;
-}
-
-h3 a {
-    font-family: margarine, serif !important;
-    font-size: 20px !important;
-    color: darkslategrey !important;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-
-/* =========================================
-   SPECIAL IMAGES
-   ========================================= */
-
-img.float-left.mr-2,
-.w-50 a img,
-.featured-wolf img,
-.mb-3 .card-img-top {
-    border-radius: 0;
-    outline: 3px solid #1b1616;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-
-/* =========================================
-   DYNASTY TITLE
-   ========================================= */
-
-span#lblPackLeaderTitle {
-    font-size: 0 !important;
-    margin-left: 2px;
-}
-
-span#lblPackLeaderTitle::after {
-    font-size: 17.5px !important;
-    font-family: margarine, serif;
-    color: #d2b4c4;
-    content: 'the iconic' !important;
-}
-
-
-/* =========================================
-   CHAT
-   ========================================= */
-
-input#btnChatSend,
-button.btn-chat-connect.btn.btn-info {
-    background-color: #3b3131 !important;
-    border-color: #352c2c !important;
-    color: #e9d9e1 !important;
-    font-family: margarine, serif !important;
-    text-transform: lowercase !important;
-}
-
-input#btnChatSend:hover,
-button.btn-chat-connect.btn.btn-info:hover {
-    filter: brightness(1.1);
-    transition: filter 0.2s !important;
-    font-family: margarine, serif !important;
-    text-transform: lowercase !important;
-}
-
-input.form-control,
-input.form-control:focus,
-select.form-control,
-select.form-control:focus,
-textarea.form-control,
-textarea.form-control:focus {
-    background-color: #e9d9e1 !important;
-    border: 2px solid #d2b4c4 !important;
-    color: #1b1616 !important;
-    font-size: 14px !important;
-    text-transform: lowercase !important;
-}
-
-.s-chat-message:nth-child(odd) {
-    background-color: seashell !important;
-    color: darkslategrey !important;
-    text-transform: none !important;
-    font-size: 14px !important;
-}
-
-.s-chat-message:nth-child(even),
-.s-chat-message:nth-child(2n) {
-    background-color: #ded5cf !important;
-    color: #1b1616 !important;
-    text-transform: none !important;
-    font-size: 14px !important;
-}
-
-a.s-chat__username,
-.s-chat-message_timestamp,
-.s-chat-sidebar .s-chat-message_timestamp {
-    color: #1b1616 !important;
-    font-size: 14px !important;
-    text-transform: none !important;
-}
-
-a.s-chat__username:hover,
-.s-chat-error_screen p,
-#context-chatMenu .chatMenu-option,
-#fraChatSettingsMenu .chatMenu-option {
-    color: darkslategrey !important;
-    text-decoration: none !important;
-}
-
-#chatMessagePinned.s-chat-message__pinned {
-    background-color: #e9d9e1 !important;
-    border-bottom: 2px solid #d2b4c4 !important;
-    color: #1b1616 !important;
-}
-
-#fra_chatContainer #txtChatInput {
-    background-color: seashell !important;
-    border: 2px solid #beb6b1 !important;
-    color: #1b1616 !important;
-    text-transform: none !important;
-}
-
-#txtChatContainer #lblCharacterCounter {
-    color: darkslategrey !important;
-}
-
-#chatMessageList[data-pings="enabled"] .s-chat-message_mentioned {
-    background-color: #d2b4c4 !important;
-    border-left: 3px solid #bb8fa7 !important;
-}
-
-
-/* =========================================
-   CHAT CHANNEL
-   ========================================= */
-
-.s-chat-sidebar #label_currentChannel {
-    background-color: #bcc7c7 !important;
-    border: 2px solid #92a3a3 !important;
-    color: #1b1616 !important;
-    text-transform: lowercase !important;
-}
-
-#fra_chatContainer .channelMenu .channelSwitcher {
-    color: #bcc7c7 !important;
-    background-color: darkslategrey !important;
-    text-transform: lowercase !important;
-}
-
-#fra_chatContainer .channelMenu .channelSwitcher.active {
-    background-color: #d2b4c4 !important;
-    color: #1b1616 !important;
-    border: 2px solid #bb8fa7 !important;
-}
-
-
-/* =========================================
-   CHAT ICONS
-   ========================================= */
-
-.fa-lg,
-.s-chat-sidebar .fa-lg,
-#sidebar .btn-icon,
-button#btnChatSettings.btn.btn-icon,
-i.fa.fa-cog.fa-lg {
-    color: darkslategrey !important;
-    opacity: 100 !important;
-    font-size: 14px;
-}
-
-.fa-lg:hover,
-.s-chat-sidebar .fa-lg:hover {
-    color: #3b3131 !important;
-    transition: 0.3s ease all !important;
-}
-
-
-/* =========================================
-   CHAT SETTINGS
-   ========================================= */
-
-#fraChatSettingsMenu a,
-#fraChatSettingsMenu label {
-    color: seashell;
-}
-
-button#btnPreviewDisplay.btn.btn-info.btn-lg {
-    width: 200px !important;
-}
-
-
-/* =========================================
-   MISC
-   ========================================= */
-
-.bookmarks li,
-button#btnchatsettings,
-#card-user b {
-    color: darkslategrey;
-}
-
-.alert-info .mr-2 {
-    opacity: 0 !important;
-    margin-left: -30px !important;
-}
-
-.badge-danger {
-    color: #ddc6d2;
-    font-size: 0.75rem !important;
-    background-color: #736056 !important;
-    margin-bottom: 0.05rem !important;
-}
-
-.badge-info {
-    color: #d2b4c4;
-    background-color: #736056;
-}
-
-.p-2 {
-    margin: 6px;
-    padding: 2px !important;
-    outline: 2px solid #bb8fa7;
-    background-color: #d2b4c4 !important;
-    border-radius: 0 !important;
-    max-width: 80% !important;
-}
-
-.border-none .card {
-    background: none !important;
-}
-
-.bg-dark,
-.bg-light {
-    background-color: seashell !important;
-    border-color: #1b1616 !important;
-    color: #1b1616;
-}
-
-.order-lg-2 > .mb-3 .card-body {
-    border: 2px solid #beb6b1 !important;
-    background-color: #ded5cf !important;
-}
-
-.bg-bar-input {
-    background: #3b3131;
 }
 
 .border-bottom {
-    border-bottom: 0.2rem solid #e9d9e1 !important;
-}
-
-
-/* =========================================
-   FORM CONTROLS
-   ========================================= */
-
-body.theme_dark .custom-control-label:before,
-.custom-control-label:before {
-    border-color: #1b1616 !important;
-    background-color: #3e4e50 !important;
-    color: #d2b4c4 !important;
-}
-
-.custom-control-input:checked ~ .custom-control-label:before {
-    color: seashell;
-    border-color: #1b1616 !important;
-    background-color: #736056;
-}
-
-.text-success,
-.text-success:hover,
-.text-danger:hover,
-.text-danger,
-a.text-danger,
-a.text-danger:hover {
-    color: #d2b4c4 !important;
-    text-transform: lowercase !important;
-}
-
-
-/* =========================================
-   HEADER
-   ========================================= */
-
-#header .navbar-status .nav-item {
-    line-height: 20px !important;
+    border-bottom: 0.2rem solid #235F38 !important;
 }
 
 #header .navbar-status {
     height: 3rem !important;
 }
 
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
-#footer a {
-    color: #8b4970 !important;
-    padding-top: 5px !important;
+.fa-lg,
+.s-chat-sidebar .fa-lg,
+#sidebar .btn-icon,
+button#btnChatSettings.btn.btn-icon,
+i.fa.fa-cog.fa-lg {
+    color: #235F38 !important;
+    opacity: 100 !important;
+    font-size: 14px;
 }
 
-
-/* =========================================
-   BREADCRUMB CREDIT
-   ========================================= */
-
-.breadcrumb::after {
-    content: '༻ css by #27126';
-    position: absolute;
-    right: 6%;
-    color: #bb8fa7;
-    font-family: margarine, serif;
-    font-weight: 800;
-}
-
-
-/* =========================================
-   DEN ACTIVITY IMAGE FILTER FIX
-   ========================================= */
-
-img[src$="packdynasty.png"],
-img[src$="nesting.png"],
-img[src$="packoverview.png"],
-img[src$="breeding.png"],
-img[src$="pupsitting.png"],
-img[src$="socializing.png"] {
-    filter: none !important;
+.fa-lg:hover,
+.s-chat-sidebar .fa-lg:hover {
+    color: #19382A !important;
+    transition: 0.3s ease all !important;
 }
