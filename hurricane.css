@@ -1,168 +1,70 @@
 /* =========================================================
-   HURRICANE
-   REALISTIC DARK STORM — WOLVDEN
+   HURRICANE — DARK REALISTIC STORM
    ========================================================= */
 
+/* ---------- PAGE ---------- */
 
-/* =========================================================
-   COLOUR PALETTE
-   ========================================================= */
-
-:root {
-    --black: #070b0e;
-    --deep-black: #0a1014;
-    --storm-dark: #10191e;
-    --storm: #172329;
-    --storm-light: #202f36;
-
-    --steel-dark: #30434b;
-    --steel: #455b64;
-    --steel-light: #657b83;
-
-    --rain: #78919a;
-    --rain-bright: #a9c0c7;
-
-    --lightning: #bcd9e1;
-    --lightning-bright: #e3f2f5;
-
-    --text: #d5dfe2;
-    --text-soft: #a9b7bc;
-
-    --danger-red: #713c3c;
-}
-
-
-/* =========================================================
-   MAIN PAGE
-   ========================================================= */
-
-html {
-    background: #070b0e !important;
-}
-
+html,
 body {
-    background-color: #070b0e !important;
-    color: var(--text) !important;
+    background-color: #05080b !important;
+    color: #ffffff !important;
+}
 
+/*
+   HURRICANE BACKGROUND
+
+   Replace YOUR_HURRICANE_IMAGE_URL with the direct image
+   URL you want to use.
+*/
+body {
     background-image:
-        radial-gradient(
-            ellipse at 50% -15%,
-            rgba(105, 130, 139, 0.30) 0%,
-            rgba(55, 72, 79, 0.18) 28%,
-            transparent 68%
-        ),
         linear-gradient(
-            180deg,
-            rgba(6, 10, 13, 0.70),
-            rgba(7, 11, 14, 0.97)
-        ) !important;
+            rgba(2, 5, 8, 0.60),
+            rgba(2, 5, 8, 0.78)
+        ),
+        url("YOUR_HURRICANE_IMAGE_URL") !important;
 
+    background-size: cover !important;
+    background-position: center center !important;
     background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
 }
 
 
-/* =========================================================
-   STORM ATMOSPHERE
-   ========================================================= */
-
-body::before {
-    content: "";
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    pointer-events: none;
-
-    background:
-        radial-gradient(
-            ellipse at 20% 10%,
-            rgba(122, 148, 157, 0.10),
-            transparent 35%
-        ),
-        radial-gradient(
-            ellipse at 80% 20%,
-            rgba(67, 91, 100, 0.13),
-            transparent 40%
-        );
-
-    opacity: 0.85;
-
-    z-index: 9999;
-}
-
-
-/* =========================================================
-   MAIN CONTENT CONTAINER
-   ========================================================= */
-
-#main {
-    background:
-        linear-gradient(
-            180deg,
-            rgba(21, 32, 38, 0.97),
-            rgba(9, 15, 19, 0.98)
-        ) !important;
-
-    color: var(--text) !important;
-
-    border-left: 1px solid rgba(103, 126, 135, 0.35) !important;
-    border-right: 1px solid rgba(103, 126, 135, 0.35) !important;
-
-    box-shadow:
-        0 0 35px rgba(0, 0, 0, 0.90),
-        inset 0 0 45px rgba(0, 0, 0, 0.25) !important;
-}
-
-
-/* =========================================================
-   TEXT
-   ========================================================= */
+/* ---------- EVERYTHING WHITE ---------- */
 
 body,
-p,
-span,
-div,
-td,
-th,
-li,
-label {
-    color: var(--text);
+body p,
+body span,
+body div,
+body td,
+body th,
+body li,
+body label,
+body small,
+body strong,
+body b,
+body em {
+    color: #ffffff !important;
 }
 
 
-.text-muted,
-.text-secondary {
-    color: var(--text-soft) !important;
-}
+/* ---------- LINKS ---------- */
 
-
-/* =========================================================
-   LINKS
-   ========================================================= */
-
-a {
-    color: var(--rain-bright) !important;
-
-    transition:
-        color 0.2s ease,
-        text-shadow 0.2s ease;
+a,
+a:visited {
+    color: #ffffff !important;
 }
 
 a:hover {
-    color: var(--lightning-bright) !important;
-
+    color: #ffffff !important;
     text-shadow:
-        0 0 5px rgba(188, 217, 225, 0.45);
+        0 0 6px rgba(255,255,255,0.9),
+        0 0 14px rgba(180,220,235,0.65) !important;
 }
 
 
-/* =========================================================
-   HEADERS
-   ========================================================= */
+/* ---------- HEADERS ---------- */
 
 h1,
 h2,
@@ -170,35 +72,102 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--lightning) !important;
+    color: #ffffff !important;
 
     text-shadow:
-        0 2px 3px rgba(0, 0, 0, 0.95),
-        0 0 10px rgba(174, 208, 218, 0.14) !important;
+        0 2px 5px #000000,
+        0 0 12px rgba(255,255,255,0.25) !important;
 }
 
 
 /* =========================================================
-   PANELS
+   MAIN CONTENT
+   ========================================================= */
+
+#main {
+    background:
+        rgba(7, 12, 16, 0.90) !important;
+
+    color: #ffffff !important;
+
+    border:
+        1px solid rgba(180,205,215,0.35) !important;
+
+    box-shadow:
+        0 0 35px rgba(0,0,0,0.95),
+        inset 0 0 35px rgba(0,0,0,0.45) !important;
+}
+
+
+/* =========================================================
+   DARK STORM PANELS
    ========================================================= */
 
 .panel,
-.panel-default {
+.panel-default,
+.alert,
+.table {
     background:
         linear-gradient(
             145deg,
-            rgba(30, 44, 51, 0.97),
-            rgba(13, 21, 26, 0.98)
+            rgba(28,39,45,0.94),
+            rgba(7,13,17,0.96)
         ) !important;
 
-    color: var(--text) !important;
+    color: #ffffff !important;
 
     border:
-        1px solid var(--steel-dark) !important;
+        1px solid rgba(150,175,185,0.45) !important;
 
     box-shadow:
-        0 7px 20px rgba(0, 0, 0, 0.65),
-        inset 0 0 18px rgba(0, 0, 0, 0.30) !important;
+        0 6px 20px rgba(0,0,0,0.80),
+        inset 0 0 18px rgba(0,0,0,0.35) !important;
+}
+
+
+/* =========================================================
+   TWINKLING BOX EDGES
+   ========================================================= */
+
+@keyframes stormTwinkle {
+
+    0%,
+    85%,
+    100% {
+        box-shadow:
+            0 6px 20px rgba(0,0,0,0.80),
+            inset 0 0 18px rgba(0,0,0,0.35);
+    }
+
+    88% {
+        box-shadow:
+            0 6px 20px rgba(0,0,0,0.80),
+            0 0 7px rgba(220,240,245,0.18),
+            inset 0 0 18px rgba(0,0,0,0.35);
+    }
+
+    90% {
+        box-shadow:
+            0 6px 20px rgba(0,0,0,0.80),
+            0 0 15px rgba(220,240,245,0.30),
+            inset 0 0 18px rgba(0,0,0,0.35);
+    }
+
+    92% {
+        box-shadow:
+            0 6px 20px rgba(0,0,0,0.80),
+            0 0 5px rgba(220,240,245,0.10),
+            inset 0 0 18px rgba(0,0,0,0.35);
+    }
+}
+
+
+.panel,
+.panel-default,
+.alert,
+.table {
+    animation:
+        stormTwinkle 12s infinite;
 }
 
 
@@ -206,97 +175,95 @@ h6 {
    PANEL HEADERS
    ========================================================= */
 
-.panel-heading {
+.panel-heading,
+.table th {
     background:
         linear-gradient(
             180deg,
-            #2b3f47,
-            #1a292f
+            rgba(55,70,77,0.96),
+            rgba(18,27,32,0.98)
         ) !important;
 
-    color: var(--lightning) !important;
+    color: #ffffff !important;
 
     border-color:
-        var(--steel) !important;
+        rgba(170,195,205,0.45) !important;
 
     text-shadow:
-        0 1px 2px #000 !important;
+        0 2px 3px #000000 !important;
 }
 
 
 /* =========================================================
-   TABLES
+   TABLE CELLS
    ========================================================= */
 
-table,
-.table {
+.table td {
     background:
-        rgba(11, 18, 22, 0.96) !important;
+        rgba(9,16,21,0.94) !important;
 
-    color: var(--text) !important;
+    color: #ffffff !important;
 
     border-color:
-        var(--steel-dark) !important;
-
-    box-shadow:
-        0 5px 17px rgba(0, 0, 0, 0.55) !important;
+        rgba(100,125,135,0.35) !important;
 }
-
-
-/* TABLE HEADER */
-
-.table th,
-table th {
-    background:
-        linear-gradient(
-            180deg,
-            #293d45,
-            #19282e
-        ) !important;
-
-    color:
-        var(--lightning) !important;
-
-    border-color:
-        var(--steel) !important;
-
-    text-shadow:
-        0 1px 2px #000 !important;
-}
-
-
-/* TABLE CELLS */
-
-.table td,
-table td {
-    background:
-        rgba(13, 22, 27, 0.96) !important;
-
-    color:
-        var(--text) !important;
-
-    border-color:
-        #2d4048 !important;
-}
-
-
-/* STRIPES */
 
 .table-striped > tbody > tr:nth-of-type(odd) > td {
     background:
-        rgba(25, 38, 44, 0.95) !important;
+        rgba(25,35,40,0.94) !important;
+}
+
+.table tbody tr:hover td {
+    background:
+        rgba(60,75,82,0.70) !important;
+
+    color: #ffffff !important;
 }
 
 
-/* HOVER */
+/* =========================================================
+   WOLF FRAMES — CIRCULAR
+   ========================================================= */
 
-.table-hover > tbody > tr:hover > td,
-.table tbody tr:hover td {
-    background:
-        rgba(54, 72, 80, 0.70) !important;
+/*
+   These rules cover several common wolf/card layouts.
+*/
 
-    color:
-        #edf5f7 !important;
+.wolf-card,
+.wolf-card img,
+.wolf-img,
+.wolf-image {
+    border-radius: 50% !important;
+}
+
+
+/* Circular wolf image */
+
+.wolf-card img,
+.wolf-img,
+.wolf-image {
+    object-fit: cover !important;
+
+    border:
+        3px solid rgba(190,215,225,0.65) !important;
+
+    box-shadow:
+        0 0 12px rgba(0,0,0,0.90),
+        0 0 8px rgba(170,210,220,0.18) !important;
+}
+
+
+/* Circular frame hover */
+
+.wolf-card:hover img,
+.wolf-card:hover .wolf-img,
+.wolf-card:hover .wolf-image {
+    border-color:
+        #ffffff !important;
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,0.35),
+        0 0 25px rgba(170,210,220,0.25) !important;
 }
 
 
@@ -311,24 +278,18 @@ input[type="button"] {
     background:
         linear-gradient(
             180deg,
-            #2c424b,
-            #17262d
+            #35464d,
+            #121c21
         ) !important;
 
-    color:
-        #d9e4e7 !important;
+    color: #ffffff !important;
 
     border:
-        1px solid #526b75 !important;
+        1px solid #81949b !important;
 
     box-shadow:
-        0 3px 8px rgba(0, 0, 0, 0.60),
-        inset 0 1px rgba(255,255,255,0.06) !important;
-
-    transition:
-        all 0.2s ease !important;
+        0 3px 8px rgba(0,0,0,0.75) !important;
 }
-
 
 .btn:hover,
 button:hover,
@@ -337,19 +298,17 @@ input[type="button"]:hover {
     background:
         linear-gradient(
             180deg,
-            #3b555f,
-            #22353d
+            #52666e,
+            #1d2b31
         ) !important;
 
-    color:
-        #f0f8fa !important;
+    color: #ffffff !important;
 
     border-color:
-        #9bb5bd !important;
+        #ffffff !important;
 
     box-shadow:
-        0 0 10px rgba(175, 211, 220, 0.18),
-        0 4px 12px rgba(0,0,0,0.70) !important;
+        0 0 12px rgba(255,255,255,0.25) !important;
 }
 
 
@@ -361,37 +320,22 @@ input,
 textarea,
 select {
     background:
-        #0a1318 !important;
+        rgba(4,9,12,0.95) !important;
 
     color:
-        var(--text) !important;
+        #ffffff !important;
 
     border:
-        1px solid #40555e !important;
-
-    box-shadow:
-        inset 0 2px 7px rgba(0,0,0,0.65) !important;
+        1px solid #657980 !important;
 }
 
-
-input:focus,
-textarea:focus,
-select:focus {
-    background:
-        #0d181e !important;
-
+input::placeholder,
+textarea::placeholder {
     color:
-        #e0eaed !important;
+        #ffffff !important;
 
-    border-color:
-        #819da6 !important;
-
-    outline:
-        none !important;
-
-    box-shadow:
-        0 0 8px rgba(159, 195, 205, 0.20),
-        inset 0 2px 7px rgba(0,0,0,0.65) !important;
+    opacity:
+        0.65 !important;
 }
 
 
@@ -402,32 +346,45 @@ select:focus {
 .navbar,
 .navbar-default {
     background:
-        linear-gradient(
-            180deg,
-            #1c2c33,
-            #0b1419
-        ) !important;
+        rgba(5,10,13,0.94) !important;
 
     border-color:
-        #40555e !important;
+        #53666d !important;
 
     box-shadow:
-        0 4px 16px rgba(0,0,0,0.75) !important;
+        0 4px 18px rgba(0,0,0,0.85) !important;
 }
 
-
+.navbar a,
 .navbar-default .navbar-nav > li > a {
     color:
-        #b9c9ce !important;
+        #ffffff !important;
 }
 
 
-.navbar-default .navbar-nav > li > a:hover {
+/* =========================================================
+   DROPDOWNS
+   ========================================================= */
+
+.dropdown-menu {
     background:
-        #293f48 !important;
+        #0a1115 !important;
+
+    border:
+        1px solid #60747b !important;
+}
+
+.dropdown-menu a {
+    color:
+        #ffffff !important;
+}
+
+.dropdown-menu a:hover {
+    background:
+        #293940 !important;
 
     color:
-        #eef7f9 !important;
+        #ffffff !important;
 }
 
 
@@ -438,71 +395,13 @@ select:focus {
 .breadcrumb,
 .breadcrumb-nav {
     background:
-        rgba(9, 16, 20, 0.94) !important;
+        rgba(4,9,12,0.90) !important;
 
     border:
-        1px solid #344951 !important;
-
-    color:
-        var(--text-soft) !important;
+        1px solid #53666d !important;
 }
 
-
-.breadcrumb > li + li:before {
-    color:
-        #6d8188 !important;
-}
-
-
-/* =========================================================
-   ALERTS
-   ========================================================= */
-
-.alert {
-    background:
-        linear-gradient(
-            145deg,
-            #202f35,
-            #111c21
-        ) !important;
-
-    color:
-        var(--text) !important;
-
-    border:
-        1px solid #4a6069 !important;
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,0.60) !important;
-}
-
-
-/* =========================================================
-   DROPDOWN MENUS
-   ========================================================= */
-
-.dropdown-menu {
-    background:
-        #0d171c !important;
-
-    border:
-        1px solid #435861 !important;
-
-    box-shadow:
-        0 8px 22px rgba(0,0,0,0.85) !important;
-}
-
-
-.dropdown-menu > li > a {
-    color:
-        var(--text) !important;
-}
-
-
-.dropdown-menu > li > a:hover {
-    background:
-        #2a4048 !important;
-
+.breadcrumb a {
     color:
         #ffffff !important;
 }
@@ -514,20 +413,13 @@ select:focus {
 
 #chatMessagePinned {
     background:
-        linear-gradient(
-            145deg,
-            #1d3038,
-            #111d22
-        ) !important;
+        rgba(13,23,28,0.95) !important;
 
     color:
-        var(--text) !important;
+        #ffffff !important;
 
     border:
-        1px solid #536b74 !important;
-
-    box-shadow:
-        0 4px 14px rgba(0,0,0,0.65) !important;
+        1px solid #71858c !important;
 }
 
 
@@ -536,14 +428,8 @@ select:focus {
    ========================================================= */
 
 hr {
-    border:
-        0 !important;
-
     border-top:
-        1px solid #40545d !important;
-
-    box-shadow:
-        0 1px rgba(255,255,255,0.03);
+        1px solid rgba(190,210,218,0.45) !important;
 }
 
 
@@ -553,37 +439,7 @@ hr {
 
 img {
     border-color:
-        #435861 !important;
-}
-
-
-/* =========================================================
-   PROFILE / WOLF IMAGES
-   ========================================================= */
-
-.profile-img,
-.user-image {
-    border:
-        1px solid #5b727b !important;
-
-    box-shadow:
-        0 6px 20px rgba(0,0,0,0.80) !important;
-}
-
-
-/* =========================================================
-   SPOILERS
-   ========================================================= */
-
-.spoiler {
-    background:
-        #0c161b !important;
-
-    color:
-        var(--text) !important;
-
-    border:
-        1px solid #40545d !important;
+        rgba(170,195,205,0.45) !important;
 }
 
 
@@ -593,52 +449,13 @@ img {
 
 footer {
     background:
-        #070c0f !important;
+        rgba(3,7,9,0.96) !important;
 
     color:
-        #87979d !important;
+        #ffffff !important;
 
     border-top:
-        1px solid #344850 !important;
-}
-
-
-/* =========================================================
-   SUBTLE LIGHTNING FLASH
-   ========================================================= */
-
-@keyframes hurricaneFlash {
-
-    0%,
-    89%,
-    100% {
-        filter: brightness(1);
-    }
-
-    90% {
-        filter: brightness(1.04);
-    }
-
-    91% {
-        filter: brightness(1.12);
-    }
-
-    92% {
-        filter: brightness(1.02);
-    }
-
-    93% {
-        filter: brightness(1.07);
-    }
-
-    94% {
-        filter: brightness(1);
-    }
-}
-
-#main {
-    animation:
-        hurricaneFlash 16s infinite;
+        1px solid #53666d !important;
 }
 
 
@@ -648,29 +465,19 @@ footer {
 
 ::-webkit-scrollbar {
     width: 11px;
-    height: 11px;
 }
 
 ::-webkit-scrollbar-track {
     background:
-        #070b0e;
+        #05080b;
 }
 
 ::-webkit-scrollbar-thumb {
     background:
-        linear-gradient(
-            180deg,
-            #405760,
-            #273a42
-        );
+        #465960;
 
     border:
-        1px solid #5b727a;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background:
-        #536c75;
+        1px solid #81949b;
 }
 
 
@@ -680,13 +487,8 @@ footer {
 
 ::selection {
     background:
-        #526d78 !important;
+        #657b83 !important;
 
     color:
         #ffffff !important;
 }
-
-
-/* =========================================================
-   END — HURRICANE
-   ========================================================= */
