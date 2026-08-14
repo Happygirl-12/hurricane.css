@@ -1,429 +1,62 @@
-/* =========================================================
-   HURRICANE
-   REALISTIC DARK STORM — WOLVDEN PROFILE CSS
-   ========================================================= */
-
-
-/* =========================
-   STORM COLOURS
-   ========================= */
-
-:root {
-    --storm-black: #080c0f;
-    --storm-dark: #0e1519;
-    --storm-panel: #172228;
-    --storm-panel-dark: #111a1f;
-
-    --storm-blue: #263942;
-    --storm-steel: #455a63;
-    --storm-light: #71858d;
-
-    --storm-white: #d8e2e5;
-    --storm-muted: #a4b2b7;
-
-    --lightning: #b8d2da;
-    --lightning-bright: #e3f0f3;
-
-    --leaf-brown: #68412d;
-    --rain: #607984;
-}
-
-
-/* =========================
-   ENTIRE PAGE
-   ========================= */
-
-html,
-body {
-    background-color: var(--storm-black) !important;
-    color: var(--storm-white) !important;
-}
-
-
-/* =========================
-   BACKGROUND
-   ========================= */
+/* HURRICANE - WOLVDEN TEST THEME */
 
 body {
-    background-image:
-        linear-gradient(
-            rgba(5, 9, 12, 0.72),
-            rgba(7, 12, 15, 0.92)
-        ),
-        radial-gradient(
-            ellipse at 50% 0%,
-            rgba(76, 100, 110, 0.28),
-            transparent 65%
-        ) !important;
-
-    background-attachment: fixed !important;
-    background-size: cover !important;
+    background-color: #080d10 !important;
+    color: #d8e2e5 !important;
 }
-
-
-/* =========================
-   ALL MAIN TEXT
-   ========================= */
-
-body,
-p,
-td,
-th,
-li,
-label {
-    color: var(--storm-white);
-}
-
-
-/* =========================
-   LINKS
-   ========================= */
 
 a {
-    color: var(--lightning) !important;
+    color: #b8d2da !important;
 }
-
-a:hover {
-    color: var(--lightning-bright) !important;
-
-    text-shadow:
-        0 0 5px rgba(190, 220, 230, 0.45);
-}
-
-
-/* =========================
-   HEADINGS
-   ========================= */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--lightning) !important;
-
-    text-shadow:
-        0 1px 3px #000 !important;
-}
-
-
-/* =========================
-   MAIN TABLE
-   ========================= */
 
 .table {
-    background-color:
-        var(--storm-panel-dark) !important;
-
-    color:
-        var(--storm-white) !important;
-
-    border-color:
-        var(--storm-steel) !important;
-
-    box-shadow:
-        0 6px 20px rgba(0, 0, 0, 0.65) !important;
+    background-color: #111a1f !important;
+    color: #d8e2e5 !important;
+    border-color: #455a63 !important;
 }
-
-
-/* =========================
-   TABLE HEADERS
-   ========================= */
 
 .table th {
-    background:
-        linear-gradient(
-            #2b4049,
-            #1c2c33
-        ) !important;
-
-    color:
-        var(--lightning-bright) !important;
-
-    border-color:
-        #4b626c !important;
-
-    text-shadow:
-        0 1px 2px #000 !important;
+    background-color: #263942 !important;
+    color: #e3f0f3 !important;
+    border-color: #455a63 !important;
 }
-
-
-/* =========================
-   TABLE CELLS
-   ========================= */
 
 .table td {
-    background-color:
-        #121c21 !important;
-
-    color:
-        var(--storm-white) !important;
-
-    border-color:
-        #30434b !important;
+    background-color: #111a1f !important;
+    color: #d8e2e5 !important;
+    border-color: #30434b !important;
 }
 
-
-/* =========================
-   STRIPED TABLES
-   ========================= */
-
-.table-striped > tbody > tr:nth-of-type(odd) {
-    background-color:
-        #172329 !important;
+.btn {
+    background-color: #263942 !important;
+    color: #d8e2e5 !important;
+    border-color: #536b75 !important;
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) > td {
-    background-color:
-        #172329 !important;
+.btn:hover {
+    background-color: #3a535d !important;
+    color: #ffffff !important;
 }
-
-
-/* =========================
-   TABLE HOVER
-   ========================= */
-
-.table-hover > tbody > tr:hover {
-    background-color:
-        #263a42 !important;
-}
-
-.table-hover > tbody > tr:hover > td {
-    background-color:
-        #263a42 !important;
-}
-
-
-/* =========================
-   BREADCRUMBS
-   ========================= */
-
-.breadcrumb-nav {
-    background:
-        #0e171c !important;
-
-    border-color:
-        #3c515a !important;
-
-    color:
-        var(--storm-white) !important;
-
-    box-shadow:
-        0 3px 12px rgba(0,0,0,0.5) !important;
-}
-
-
-/* =========================
-   CHAT
-   ========================= */
-
-#chatMessagePinned,
-#chatMessagePinned.s-chat-message__pinned {
-    background:
-        #18272e !important;
-
-    color:
-        var(--storm-white) !important;
-
-    border-color:
-        #506771 !important;
-}
-
-
-/* =========================
-   CHAT MESSAGE AREA
-   ========================= */
-
-.s-chat-message {
-    color:
-        var(--storm-white) !important;
-}
-
-.s-chat-message__username {
-    color:
-        var(--lightning) !important;
-}
-
-
-/* =========================
-   FORM ELEMENTS
-   ========================= */
 
 input,
 textarea,
 select {
-    background:
-        #0c1418 !important;
-
-    color:
-        var(--storm-white) !important;
-
-    border:
-        1px solid #425861 !important;
+    background-color: #0c151a !important;
+    color: #d8e2e5 !important;
+    border-color: #455a63 !important;
 }
 
-
-input:focus,
-textarea:focus,
-select:focus {
-    border-color:
-        var(--lightning) !important;
-
-    outline:
-        none !important;
-
-    box-shadow:
-        0 0 6px rgba(150, 190, 200, 0.18) !important;
+#chatMessagePinned {
+    background-color: #182830 !important;
+    color: #d8e2e5 !important;
+    border-color: #526973 !important;
 }
-
-
-/* =========================
-   BUTTONS
-   ========================= */
-
-.btn {
-    background:
-        linear-gradient(
-            #2b414a,
-            #17262d
-        ) !important;
-
-    color:
-        var(--storm-white) !important;
-
-    border:
-        1px solid #566c75 !important;
-
-    box-shadow:
-        0 3px 8px rgba(0,0,0,0.55) !important;
-}
-
-
-.btn:hover {
-    background:
-        linear-gradient(
-            #3b535d,
-            #23353d
-        ) !important;
-
-    color:
-        #ffffff !important;
-
-    border-color:
-        #9ab2ba !important;
-}
-
-
-/* =========================
-   SUCCESS / WARNING / DANGER
-   MUTED TO FIT STORM THEME
-   ========================= */
-
-.alert {
-    background:
-        #17252b !important;
-
-    color:
-        var(--storm-white) !important;
-
-    border-color:
-        #4a6069 !important;
-}
-
-
-/* =========================
-   DROPDOWN MENUS
-   ========================= */
-
-.dropdown-menu {
-    background:
-        #101a1f !important;
-
-    border:
-        1px solid #465c65 !important;
-
-    box-shadow:
-        0 8px 20px rgba(0,0,0,0.75) !important;
-}
-
-
-.dropdown-menu > li > a {
-    color:
-        var(--storm-white) !important;
-}
-
-
-.dropdown-menu > li > a:hover {
-    background:
-        #293d45 !important;
-
-    color:
-        #ffffff !important;
-}
-
-
-/* =========================
-   HORIZONTAL LINES
-   ========================= */
 
 hr {
-    border:
-        0 !important;
-
-    border-top:
-        1px solid #435861 !important;
+    border-top: 1px solid #435862 !important;
 }
 
-
-/* =========================
-   IMAGES
-   ========================= */
-
-img {
-    border-color:
-        #40555e !important;
+::selection {
+    background-color: #526d78 !important;
+    color: #ffffff !important;
 }
-
-
-/* =========================
-   PROFILE / DEN IMAGE AREAS
-   ========================= */
-
-.featured-wolf {
-    border-color:
-        #4d636c !important;
-
-    box-shadow:
-        0 5px 18px rgba(0,0,0,0.7) !important;
-}
-
-
-/* =========================
-   NAVIGATION
-   ========================= */
-
-.navbar {
-    background:
-        linear-gradient(
-            #1a2a31,
-            #0d161b
-        ) !important;
-
-    border-color:
-        #3f555e !important;
-
-    box-shadow:
-        0 4px 15px rgba(0,0,0,0.65) !important;
-}
-
-
-.navbar a {
-    color:
-        #c0cdd1 !important;
-}
-
-
-.navbar a:hover {
-    color:
-        #ffffff
