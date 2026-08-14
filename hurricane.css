@@ -1,18 +1,15 @@
-```css
-/* =========================================================
-   WOLVDEN — HURRICANE + DARK LEAVES THEME
-   ========================================================= */
+/* ==========================================
+   HURRICANE DEN THEME
+   ========================================== */
 
 
-/* =========================
-   HURRICANE BACKGROUND
-   ========================= */
+/* ---------- HURRICANE BACKGROUND ---------- */
 
 body {
     background:
         linear-gradient(
-            rgba(4, 12, 16, 0.30),
-            rgba(2, 8, 12, 0.45)
+            rgba(5, 15, 20, 0.25),
+            rgba(2, 8, 12, 0.35)
         ),
         url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png")
         center center / cover fixed no-repeat !important;
@@ -21,214 +18,240 @@ body {
 }
 
 
-/* =========================
-   MAIN PAGE
-   ========================= */
+/* ---------- MAIN PAGE ---------- */
 
 #page {
-    background: rgba(5, 12, 15, 0.86) !important;
+    background: rgba(5, 13, 17, 0.82) !important;
 
-    border-left: 1px solid rgba(180, 195, 198, 0.30);
-    border-right: 1px solid rgba(180, 195, 198, 0.30);
+    border-left: 2px solid rgba(180, 200, 205, 0.30);
+    border-right: 2px solid rgba(180, 200, 205, 0.30);
 
     box-shadow:
-        0 0 35px rgba(0, 0, 0, 0.90),
-        inset 0 0 35px rgba(0, 0, 0, 0.50);
+        0 0 35px rgba(0,0,0,.9),
+        inset 0 0 35px rgba(0,0,0,.5);
 }
 
 
-/* =========================
-   GENERAL TEXT
-   ========================= */
+/* ---------- MAIN CONTENT ---------- */
 
-body,
-#page {
-    color: #d8e1e3 !important;
+#main {
+    background: rgba(4, 12, 16, 0.72) !important;
 }
 
-#page a {
-    color: #d6e2e4 !important;
+
+/* ---------- SIDEBAR ---------- */
+
+#sidebar .card {
+    background: rgba(5, 14, 18, 0.90) !important;
+
+    border-color: rgba(150, 175, 180, 0.35) !important;
+
+    color: #dbe5e7 !important;
 }
 
-#page a:hover {
-    color: #ffffff !important;
+#sidebar {
+    background: rgba(3, 10, 13, 0.65) !important;
+}
+
+
+/* ==========================================
+   PACK DYNASTY
+   ========================================== */
+
+img[src$="packdynasty.png"] {
+    content: url(
+        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
+    ) !important;
+}
+
+
+/* ==========================================
+   PACK OVERVIEW
+   ========================================== */
+
+img[src$="packoverview.png"] {
+    content: url(
+        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
+    ) !important;
+}
+
+
+/* ==========================================
+   BREEDING
+   ========================================== */
+
+img[src$="breeding.png"] {
+    content: url(
+        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
+    ) !important;
+}
+
+
+/* ==========================================
+   MAKE THE LEAF IMAGES FIT THEIR BOXES
+   ========================================== */
+
+.form-row .card-img-top {
+    object-fit: cover;
+}
+
+
+/* ==========================================
+   DARK OVERLAY ON NAVIGATION CARDS
+   ========================================== */
+
+.form-row .card {
+    background: rgba(4, 12, 15, 0.65) !important;
+
+    border-color: rgba(160, 185, 190, 0.35) !important;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.65),
+        inset 0 0 15px rgba(0,0,0,.45);
+}
+
+
+/* ---------- NAVIGATION TEXT ---------- */
+
+.form-row .card-title,
+.form-row .card a {
+    color: #f0f5f6 !important;
 
     text-shadow:
-        0 0 7px rgba(210, 225, 228, 0.75);
+        0 2px 5px #000,
+        0 0 8px #000;
 }
 
 
-/* =========================
-   PANELS / BOXES
-   ========================= */
+/* ---------- HOVER ---------- */
 
-.panel,
-.box,
-.table {
-    background:
-        linear-gradient(
-            rgba(7, 17, 21, 0.88),
-            rgba(2, 9, 12, 0.94)
-        ) !important;
-
-    border: 1px solid rgba(160, 180, 185, 0.30) !important;
+.form-row .card:hover {
+    filter: brightness(1.12);
 
     box-shadow:
-        inset 0 0 20px rgba(0, 0, 0, 0.70),
-        0 4px 15px rgba(0, 0, 0, 0.55);
+        0 0 18px rgba(170,195,200,.25),
+        inset 0 0 18px rgba(0,0,0,.5);
 
-    color: #d8e1e3 !important;
+    transition: .3s ease;
 }
 
 
-/* =========================
-   HEADERS
-   ========================= */
+/* ==========================================
+   PACK INFORMATION
+   ========================================== */
 
+#main .card,
+#main .table {
+    background:
+        rgba(6, 17, 21, 0.88) !important;
+
+    border-color:
+        rgba(150, 175, 180, 0.30) !important;
+
+    color: #dbe4e6 !important;
+}
+
+
+/* ---------- TABLE ROWS ---------- */
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background: rgba(10, 24, 29, 0.75) !important;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background: rgba(4, 13, 17, 0.75) !important;
+}
+
+
+/* ==========================================
+   HEADERS
+   ========================================== */
+
+.card-header,
+.table th,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #e1eaec !important;
-
-    text-shadow:
-        0 2px 4px #000,
-        0 0 8px rgba(180, 200, 205, 0.30);
-}
-
-
-/* =========================================================
-   THE THREE LEAF BOXES
-   ========================================================= */
-
-#den-main .box:nth-of-type(1),
-#den-main .box:nth-of-type(2),
-#den-main .box:nth-of-type(3) {
-
     background:
         linear-gradient(
-            rgba(2, 10, 10, 0.30),
-            rgba(2, 10, 10, 0.65)
-        ),
-        url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png")
-        center / cover no-repeat !important;
-
-    border: 1px solid rgba(170, 190, 190, 0.45) !important;
-
-    box-shadow:
-        inset 0 0 25px rgba(0, 0, 0, 0.65),
-        0 4px 12px rgba(0, 0, 0, 0.55);
-
-    transition: 0.3s ease;
-}
-
-
-/* =========================
-   LEAF BOX HOVER
-   ========================= */
-
-#den-main .box:nth-of-type(1):hover,
-#den-main .box:nth-of-type(2):hover,
-#den-main .box:nth-of-type(3):hover {
-
-    filter: brightness(1.15);
-
-    box-shadow:
-        inset 0 0 20px rgba(0, 0, 0, 0.55),
-        0 0 18px rgba(150, 180, 180, 0.25);
-}
-
-
-/* =========================
-   LEAF BOX TEXT
-   ========================= */
-
-#den-main .box:nth-of-type(1) a,
-#den-main .box:nth-of-type(2) a,
-#den-main .box:nth-of-type(3) a {
-
-    color: #f0f5f5 !important;
-
-    text-shadow:
-        0 2px 5px #000,
-        0 0 8px rgba(0, 0, 0, 0.95);
-}
-
-
-/* =========================
-   WOLF CARDS
-   ========================= */
-
-.wolf,
-.wolf-card,
-.wolfcard {
-
-    background: rgba(5, 13, 16, 0.90) !important;
-
-    border: 1px solid rgba(150, 175, 180, 0.30) !important;
-
-    box-shadow:
-        inset 0 0 15px rgba(0, 0, 0, 0.70),
-        0 3px 10px rgba(0, 0, 0, 0.55);
-}
-
-
-/* =========================
-   BUTTONS
-   ========================= */
-
-button,
-.btn {
-
-    background:
-        linear-gradient(
-            rgba(25, 40, 44, 0.95),
-            rgba(5, 13, 16, 0.95)
+            90deg,
+            rgba(3,10,13,.95),
+            rgba(17,32,37,.95),
+            rgba(3,10,13,.95)
         ) !important;
 
-    border: 1px solid rgba(160, 185, 190, 0.40) !important;
+    color: #e2ebed !important;
 
-    color: #e0e8e9 !important;
-
-    box-shadow:
-        inset 0 0 10px rgba(0, 0, 0, 0.60);
+    text-shadow:
+        0 2px 4px #000;
 }
 
 
-button:hover,
-.btn:hover {
+/* ==========================================
+   LINKS
+   ========================================== */
 
-    background:
-        linear-gradient(
-            rgba(45, 60, 64, 0.95),
-            rgba(8, 18, 22, 0.95)
-        ) !important;
+a {
+    color: #d8e6e8 !important;
+}
 
+a:hover {
     color: #ffffff !important;
+
+    text-shadow:
+        0 0 8px rgba(190,220,225,.75);
 }
 
 
-/* =========================
-   INPUTS
-   ========================= */
+/* ==========================================
+   BUTTONS
+   ========================================== */
 
-input,
-textarea,
-select {
+.btn,
+button {
+    background:
+        linear-gradient(
+            rgba(27,44,49,.95),
+            rgba(5,13,17,.95)
+        ) !important;
 
-    background: rgba(3, 10, 13, 0.90) !important;
+    border-color:
+        rgba(160,185,190,.4) !important;
 
-    border: 1px solid rgba(150, 175, 180, 0.35) !important;
+    color: #e1eaec !important;
+}
 
-    color: #dce5e7 !important;
+.btn:hover,
+button:hover {
+    background:
+        linear-gradient(
+            rgba(45,63,68,.95),
+            rgba(7,17,21,.95)
+        ) !important;
 }
 
 
-/* =========================
+/* ==========================================
+   WOLF CARDS
+   ========================================== */
+
+.wolf-card,
+.wolf,
+.wolfcard {
+    background:
+        rgba(5,13,17,.88) !important;
+
+    border-color:
+        rgba(150,175,180,.3) !important;
+}
+
+
+/* ==========================================
    SCROLLBAR
-   ========================= */
+   ========================================== */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -239,34 +262,21 @@ select {
 }
 
 ::-webkit-scrollbar-thumb {
-
-    background: #34464b;
+    background: #34484e;
 
     border: 2px solid #071014;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #60767c;
+    background: #60777d;
 }
 
 
-/* =========================
-   IMAGE APPEARANCE
-   ========================= */
-
-img {
-    filter:
-        saturate(0.85)
-        contrast(1.05);
-}
-
-
-/* =========================
+/* ==========================================
    SUBTLE STORM OVERLAY
-   ========================= */
+   ========================================== */
 
 #page::before {
-
     content: "";
 
     position: fixed;
@@ -277,10 +287,9 @@ img {
 
     background:
         linear-gradient(
-            rgba(120, 150, 155, 0.035),
-            rgba(0, 0, 0, 0.12)
+            rgba(130,155,160,.025),
+            rgba(0,0,0,.12)
         );
 
     z-index: 9999;
 }
-```
