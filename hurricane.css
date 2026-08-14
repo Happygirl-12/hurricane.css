@@ -1,62 +1,123 @@
-/* HURRICANE - WOLVDEN TEST THEME */
+/* =========================================================
+   WOLVDEN — HURRICANE STORM
+   ========================================================= */
 
+html,
 body {
-    background-color: #080d10 !important;
+    background: #080d10 !important;
     color: #d8e2e5 !important;
 }
 
-a {
-    color: #b8d2da !important;
+/* Main page background */
+body {
+    background-image:
+        linear-gradient(
+            rgba(5, 9, 12, 0.82),
+            rgba(8, 13, 16, 0.94)
+        ) !important;
+
+    background-attachment: fixed !important;
 }
 
+/* Main content */
+#main {
+    background: #10191e !important;
+    color: #d8e2e5 !important;
+}
+
+/* Tables */
 .table {
-    background-color: #111a1f !important;
+    background: #111a1f !important;
     color: #d8e2e5 !important;
     border-color: #455a63 !important;
 }
 
 .table th {
-    background-color: #263942 !important;
+    background: #263942 !important;
     color: #e3f0f3 !important;
     border-color: #455a63 !important;
 }
 
 .table td {
-    background-color: #111a1f !important;
+    background: #111a1f !important;
     color: #d8e2e5 !important;
     border-color: #30434b !important;
 }
 
-.btn {
-    background-color: #263942 !important;
-    color: #d8e2e5 !important;
-    border-color: #536b75 !important;
+/* Links */
+a {
+    color: #b8d2da !important;
 }
 
-.btn:hover {
-    background-color: #3a535d !important;
+a:hover {
     color: #ffffff !important;
 }
 
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #b9d5df !important;
+    text-shadow: 0 1px 3px #000 !important;
+}
+
+/* Buttons */
+.btn {
+    background: #263942 !important;
+    color: #d8e2e5 !important;
+    border: 1px solid #536b75 !important;
+}
+
+.btn:hover {
+    background: #3a535d !important;
+    color: #ffffff !important;
+}
+
+/* Inputs */
 input,
 textarea,
 select {
-    background-color: #0c151a !important;
+    background: #0c151a !important;
     color: #d8e2e5 !important;
-    border-color: #455a63 !important;
+    border: 1px solid #455a63 !important;
 }
 
+/* Chat pinned message */
 #chatMessagePinned {
-    background-color: #182830 !important;
+    background: #182830 !important;
     color: #d8e2e5 !important;
     border-color: #526973 !important;
 }
 
+/* Horizontal lines */
 hr {
     border-top: 1px solid #435862 !important;
 }
 
+/* Images */
+img {
+    border-color: #40555e !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080d10;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #344a53;
+    border: 1px solid #50656e;
+}
+
+/* Text selection */
 ::selection {
-    background-color: #526d78 !important;
+    background: #526d78 !important;
     color: #ffffff !important;
 }
