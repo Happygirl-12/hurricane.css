@@ -825,3 +825,305 @@ i.fa.fa-cog.fa-lg {
     color: #19382A !important;
     transition: 0.3s ease all !important;
 }
+/* =========================================================
+   FINAL FIX — STORM + FOREST LEAF THEME
+   Paste this at the VERY BOTTOM of your CSS
+   ========================================================= */
+
+
+/* =========================
+   🌊 STORM BACKGROUND
+   ========================= */
+
+html,
+body,
+body.theme_dark {
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-color: #19382A !important;
+}
+
+
+/* =========================
+   🌿 LIGHTER MAIN PAGE
+   ========================= */
+
+/* Main den area */
+#main {
+    background: rgba(244, 240, 231, 0.94) !important;
+    color: #19382A !important;
+    border: 2px solid #235F38 !important;
+}
+
+/* Main cards */
+#main .card,
+#main .card-body {
+    background-color: rgba(244, 240, 231, 0.96) !important;
+    color: #19382A !important;
+}
+
+/* Sidebar */
+#sidebar {
+    background: rgba(25, 56, 42, 0.78) !important;
+    border-color: #19382A !important;
+}
+
+/* Sidebar cards stay LIGHT */
+#sidebar .card,
+#sidebar .card-body {
+    background-color: rgba(244, 240, 231, 0.96) !important;
+    color: #19382A !important;
+}
+
+
+/* =========================
+   🌿 SIX DEN BUTTON IMAGES
+   ========================= */
+
+/*
+   IMPORTANT:
+   Using *= instead of $= makes this work even if
+   Wolvden adds extra information to the image URL.
+*/
+
+
+/* PACK DYNASTY */
+img[src*="packdynasty.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+
+    width: 100% !important;
+    height: 125px !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    filter: none !important;
+}
+
+
+/* NESTING */
+img[src*="nesting.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+
+    width: 100% !important;
+    height: 125px !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    filter: none !important;
+}
+
+
+/* PACK OVERVIEW */
+img[src*="packoverview.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+
+    width: 100% !important;
+    height: 125px !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    filter: none !important;
+}
+
+
+/* BREEDING */
+img[src*="breeding.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+
+    width: 100% !important;
+    height: 125px !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    filter: none !important;
+}
+
+
+/* PUPSITTING */
+img[src*="pupsitting.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+
+    width: 100% !important;
+    height: 125px !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    filter: none !important;
+}
+
+
+/* SOCIALIZING */
+img[src*="socializing.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+
+    width: 100% !important;
+    height: 125px !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    filter: none !important;
+}
+
+
+/* =========================
+   🌿 DEN BUTTON CONTAINERS
+   ========================= */
+
+img[src*="packdynasty.png"],
+img[src*="nesting.png"],
+img[src*="packoverview.png"],
+img[src*="breeding.png"],
+img[src*="pupsitting.png"],
+img[src*="socializing.png"] {
+    border: 3px solid #19382A !important;
+    border-radius: 0 !important;
+}
+
+
+/* =========================
+   🌿 BUTTON TEXT
+   ========================= */
+
+/* Make the six button labels forest green/cream */
+#dencards a,
+#dencards a:hover {
+    color: #F4F0E7 !important;
+}
+
+
+/* =========================
+   🌿 GENERAL COLORS
+   ========================= */
+
+.navbar-main {
+    background-color: #19382A !important;
+    border-bottom: 2px solid #235F38 !important;
+}
+
+.navbar-status {
+    background-color: #235F38 !important;
+}
+
+.breadcrumb-nav {
+    background-color: rgba(35, 95, 56, 0.94) !important;
+    border-color: #19382A !important;
+}
+
+.card-header,
+#dencards {
+    background-color: #235F38 !important;
+    border-color: #19382A !important;
+    color: #F4F0E7 !important;
+}
+
+.subheader {
+    background-color: #235F38 !important;
+    color: #F4F0E7 !important;
+}
+
+
+/* =========================
+   ☀️ KEEP CONTENT LIGHT
+   ========================= */
+
+.table,
+.table-striped,
+.table tbody,
+.table td,
+.table tr {
+    background-color: rgba(244, 240, 231, 0.94) !important;
+    color: #19382A !important;
+}
+
+.table th {
+    background-color: #19382A !important;
+    color: #F4F0E7 !important;
+}
+
+input.form-control,
+select.form-control,
+textarea.form-control {
+    background-color: #F4F0E7 !important;
+    color: #19382A !important;
+    border-color: #235F38 !important;
+}
+
+
+/* =========================
+   🌿 LINKS
+   ========================= */
+
+a {
+    color: #235F38 !important;
+}
+
+a:hover {
+    color: #19382A !important;
+}
+
+
+/* =========================
+   🌿 BUTTONS
+   ========================= */
+
+.btn-success,
+.btn-primary,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    background-color: #235F38 !important;
+    border-color: #19382A !important;
+    color: #F4F0E7 !important;
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover {
+    background-color: #19382A !important;
+    color: #F4F0E7 !important;
+}
+
+
+/* =========================
+   🌿 CHAT
+   ========================= */
+
+.s-chat-message:nth-child(odd) {
+    background-color: #F4F0E7 !important;
+    color: #19382A !important;
+}
+
+.s-chat-message:nth-child(even) {
+    background-color: #D8E5D5 !important;
+    color: #19382A !important;
+}
+
+#fra_chatContainer #txtChatInput {
+    background-color: #F4F0E7 !important;
+    color: #19382A !important;
+    border-color: #235F38 !important;
+}
+
+
+/* =========================
+   REMOVE OLD DARK FILTER
+   ========================= */
+
+img {
+    filter: none !important;
+}
+
+body {
+    filter: none !important;
+}
