@@ -1,135 +1,99 @@
 /* =========================================================
    HURRICANE
-   Realistic Dark Storm Profile Theme
+   REALISTIC DARK STORM — WOLVDEN PROFILE CSS
    ========================================================= */
 
 
-/* =========================================================
-   COLOURS
-   ========================================================= */
+/* =========================
+   STORM COLOURS
+   ========================= */
 
 :root {
-    --storm-black: #080d10;
-    --storm-dark: #0d151a;
-    --storm-panel: #131e24;
-    --storm-panel-2: #18262d;
+    --storm-black: #080c0f;
+    --storm-dark: #0e1519;
+    --storm-panel: #172228;
+    --storm-panel-dark: #111a1f;
 
-    --storm-blue: #263a43;
-    --storm-steel: #42555e;
-    --storm-light: #70838b;
+    --storm-blue: #263942;
+    --storm-steel: #455a63;
+    --storm-light: #71858d;
 
-    --rain-blue: #607985;
+    --storm-white: #d8e2e5;
+    --storm-muted: #a4b2b7;
 
-    --lightning: #b9d5df;
-    --lightning-white: #e5f2f5;
+    --lightning: #b8d2da;
+    --lightning-bright: #e3f0f3;
 
-    --text: #d5dee1;
-    --text-soft: #aebbc0;
-
-    --shadow: rgba(0, 0, 0, 0.75);
+    --leaf-brown: #68412d;
+    --rain: #607984;
 }
 
 
-/* =========================================================
-   PAGE BACKGROUND
-   ========================================================= */
+/* =========================
+   ENTIRE PAGE
+   ========================= */
 
+html,
 body {
     background-color: var(--storm-black) !important;
+    color: var(--storm-white) !important;
+}
 
-    color: var(--text) !important;
 
+/* =========================
+   BACKGROUND
+   ========================= */
+
+body {
     background-image:
         linear-gradient(
-            rgba(5, 9, 12, 0.82),
-            rgba(8, 13, 16, 0.92)
+            rgba(5, 9, 12, 0.72),
+            rgba(7, 12, 15, 0.92)
         ),
         radial-gradient(
-            ellipse at 50% -10%,
-            rgba(85, 111, 121, 0.28),
+            ellipse at 50% 0%,
+            rgba(76, 100, 110, 0.28),
             transparent 65%
-        );
-
-    background-attachment: fixed;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-}
-
-
-/* =========================================================
-   MAIN PAGE
-   ========================================================= */
-
-#main {
-    background:
-        linear-gradient(
-            180deg,
-            rgba(20, 31, 37, 0.96),
-            rgba(10, 17, 21, 0.97)
         ) !important;
 
-    color: var(--text) !important;
-
-    border-left:
-        1px solid rgba(111, 135, 145, 0.25) !important;
-
-    border-right:
-        1px solid rgba(111, 135, 145, 0.25) !important;
-
-    box-shadow:
-        0 0 30px rgba(0, 0, 0, 0.8),
-        inset 0 0 50px rgba(0, 0, 0, 0.2);
+    background-attachment: fixed !important;
+    background-size: cover !important;
 }
 
 
-/* =========================================================
-   SIDEBAR
-   ========================================================= */
-
-#sidebar {
-    background:
-        linear-gradient(
-            180deg,
-            #0b1216,
-            #080d10
-        ) !important;
-
-    color: var(--text) !important;
-
-    border-color:
-        rgba(82, 104, 113, 0.35) !important;
-
-    box-shadow:
-        5px 0 20px rgba(0, 0, 0, 0.55);
-}
-
-
-/* =========================================================
-   GENERAL TEXT
-   ========================================================= */
+/* =========================
+   ALL MAIN TEXT
+   ========================= */
 
 body,
 p,
-span,
-div,
 td,
-li {
-    color: var(--text);
+th,
+li,
+label {
+    color: var(--storm-white);
 }
 
 
-.text-muted,
-.text-secondary {
-    color: var(--text-soft) !important;
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+    color: var(--lightning) !important;
+}
+
+a:hover {
+    color: var(--lightning-bright) !important;
+
+    text-shadow:
+        0 0 5px rgba(190, 220, 230, 0.45);
 }
 
 
-/* =========================================================
-   HEADERS
-   ========================================================= */
+/* =========================
+   HEADINGS
+   ========================= */
 
 h1,
 h2,
@@ -139,217 +103,164 @@ h5,
 h6 {
     color: var(--lightning) !important;
 
-    font-weight: 700;
-
     text-shadow:
-        0 1px 2px #000,
-        0 0 8px rgba(170, 205, 215, 0.18);
+        0 1px 3px #000 !important;
 }
 
 
-/* =========================================================
-   LINKS
-   ========================================================= */
-
-a {
-    color: #b8d0d8 !important;
-
-    transition:
-        color 0.2s ease,
-        text-shadow 0.2s ease;
-}
-
-a:hover {
-    color: var(--lightning-white) !important;
-
-    text-shadow:
-        0 0 5px rgba(190, 220, 230, 0.5);
-}
-
-
-/* =========================================================
-   TABLES
-   ========================================================= */
+/* =========================
+   MAIN TABLE
+   ========================= */
 
 .table {
-    background:
-        rgba(13, 21, 26, 0.94) !important;
+    background-color:
+        var(--storm-panel-dark) !important;
 
-    color: var(--text) !important;
+    color:
+        var(--storm-white) !important;
 
     border-color:
         var(--storm-steel) !important;
 
     box-shadow:
-        0 4px 15px var(--shadow);
+        0 6px 20px rgba(0, 0, 0, 0.65) !important;
 }
 
 
-/* TABLE HEADERS */
+/* =========================
+   TABLE HEADERS
+   ========================= */
 
 .table th {
     background:
         linear-gradient(
-            180deg,
-            #24363e,
-            #18262d
+            #2b4049,
+            #1c2c33
         ) !important;
 
     color:
-        var(--lightning) !important;
+        var(--lightning-bright) !important;
 
     border-color:
-        #3c515b !important;
+        #4b626c !important;
 
     text-shadow:
-        0 1px 2px #000;
+        0 1px 2px #000 !important;
 }
 
 
-/* TABLE CELLS */
+/* =========================
+   TABLE CELLS
+   ========================= */
 
 .table td {
-    background:
-        rgba(16, 26, 31, 0.94) !important;
+    background-color:
+        #121c21 !important;
 
     color:
-        var(--text) !important;
+        var(--storm-white) !important;
 
     border-color:
-        #2d4049 !important;
+        #30434b !important;
 }
 
 
-/* STRIPED ROWS */
+/* =========================
+   STRIPED TABLES
+   ========================= */
 
-.table-striped tbody tr:nth-of-type(odd) td {
-    background:
-        rgba(24, 37, 44, 0.92) !important;
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color:
+        #172329 !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > td {
+    background-color:
+        #172329 !important;
 }
 
 
-/* ROW HOVER */
+/* =========================
+   TABLE HOVER
+   ========================= */
 
-.table tbody tr:hover td {
-    background:
-        rgba(53, 70, 78, 0.48) !important;
+.table-hover > tbody > tr:hover {
+    background-color:
+        #263a42 !important;
+}
 
-    transition:
-        background 0.2s ease;
+.table-hover > tbody > tr:hover > td {
+    background-color:
+        #263a42 !important;
 }
 
 
-/* =========================================================
-   PANELS / CARDS
-   ========================================================= */
+/* =========================
+   BREADCRUMBS
+   ========================= */
 
-.panel {
+.breadcrumb-nav {
     background:
-        linear-gradient(
-            145deg,
-            rgba(28, 42, 49, 0.96),
-            rgba(13, 21, 26, 0.96)
-        ) !important;
+        #0e171c !important;
 
-    color: var(--text) !important;
+    border-color:
+        #3c515a !important;
 
-    border:
-        1px solid #40545d !important;
+    color:
+        var(--storm-white) !important;
 
     box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.65),
-        inset 0 0 20px rgba(0, 0, 0, 0.25);
+        0 3px 12px rgba(0,0,0,0.5) !important;
 }
 
 
-/* =========================================================
-   PANEL HEADERS
-   ========================================================= */
+/* =========================
+   CHAT
+   ========================= */
 
-.panel-heading {
+#chatMessagePinned,
+#chatMessagePinned.s-chat-message__pinned {
     background:
-        linear-gradient(
-            180deg,
-            #293d46,
-            #1a2a31
-        ) !important;
+        #18272e !important;
 
+    color:
+        var(--storm-white) !important;
+
+    border-color:
+        #506771 !important;
+}
+
+
+/* =========================
+   CHAT MESSAGE AREA
+   ========================= */
+
+.s-chat-message {
+    color:
+        var(--storm-white) !important;
+}
+
+.s-chat-message__username {
     color:
         var(--lightning) !important;
-
-    border-color:
-        #4b6069 !important;
-
-    text-shadow:
-        0 1px 2px #000;
 }
 
 
-/* =========================================================
-   BUTTONS
-   ========================================================= */
-
-.btn {
-    background:
-        linear-gradient(
-            180deg,
-            #2b414b,
-            #18272e
-        ) !important;
-
-    color:
-        #d7e3e6 !important;
-
-    border:
-        1px solid #526a74 !important;
-
-    box-shadow:
-        0 3px 7px rgba(0, 0, 0, 0.55),
-        inset 0 1px rgba(255,255,255,0.05);
-
-    transition:
-        all 0.2s ease;
-}
-
-
-.btn:hover {
-    background:
-        linear-gradient(
-            180deg,
-            #3a535e,
-            #22343c
-        ) !important;
-
-    color:
-        #eef7f9 !important;
-
-    border-color:
-        #91adb7 !important;
-
-    box-shadow:
-        0 0 8px rgba(155, 193, 204, 0.22),
-        0 4px 10px rgba(0,0,0,0.6);
-}
-
-
-/* =========================================================
-   INPUTS
-   ========================================================= */
+/* =========================
+   FORM ELEMENTS
+   ========================= */
 
 input,
 textarea,
 select {
     background:
-        #0c151a !important;
+        #0c1418 !important;
 
     color:
-        var(--text) !important;
+        var(--storm-white) !important;
 
     border:
-        1px solid #40545d !important;
-
-    box-shadow:
-        inset 0 2px 6px rgba(0,0,0,0.55);
+        1px solid #425861 !important;
 }
 
 
@@ -357,318 +268,162 @@ input:focus,
 textarea:focus,
 select:focus {
     border-color:
-        #78949e !important;
+        var(--lightning) !important;
 
     outline:
         none !important;
 
     box-shadow:
-        0 0 7px rgba(145, 180, 190, 0.18),
-        inset 0 2px 6px rgba(0,0,0,0.55);
+        0 0 6px rgba(150, 190, 200, 0.18) !important;
 }
 
 
-/* =========================================================
-   CHAT
-   ========================================================= */
+/* =========================
+   BUTTONS
+   ========================= */
 
-#chatMessagePinned {
+.btn {
     background:
-        #182830 !important;
+        linear-gradient(
+            #2b414a,
+            #17262d
+        ) !important;
 
     color:
-        var(--text) !important;
+        var(--storm-white) !important;
 
     border:
-        1px solid #526973 !important;
+        1px solid #566c75 !important;
 
     box-shadow:
-        0 3px 12px rgba(0,0,0,0.6);
+        0 3px 8px rgba(0,0,0,0.55) !important;
 }
 
 
-/* =========================================================
+.btn:hover {
+    background:
+        linear-gradient(
+            #3b535d,
+            #23353d
+        ) !important;
+
+    color:
+        #ffffff !important;
+
+    border-color:
+        #9ab2ba !important;
+}
+
+
+/* =========================
+   SUCCESS / WARNING / DANGER
+   MUTED TO FIT STORM THEME
+   ========================= */
+
+.alert {
+    background:
+        #17252b !important;
+
+    color:
+        var(--storm-white) !important;
+
+    border-color:
+        #4a6069 !important;
+}
+
+
+/* =========================
+   DROPDOWN MENUS
+   ========================= */
+
+.dropdown-menu {
+    background:
+        #101a1f !important;
+
+    border:
+        1px solid #465c65 !important;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.75) !important;
+}
+
+
+.dropdown-menu > li > a {
+    color:
+        var(--storm-white) !important;
+}
+
+
+.dropdown-menu > li > a:hover {
+    background:
+        #293d45 !important;
+
+    color:
+        #ffffff !important;
+}
+
+
+/* =========================
    HORIZONTAL LINES
-   ========================================================= */
+   ========================= */
 
 hr {
     border:
         0 !important;
 
     border-top:
-        1px solid #435862 !important;
-
-    box-shadow:
-        0 -1px rgba(255,255,255,0.03);
+        1px solid #435861 !important;
 }
 
 
-/* =========================================================
-   BREADCRUMBS
-   ========================================================= */
-
-.breadcrumb {
-    background:
-        rgba(11, 18, 22, 0.9) !important;
-
-    border:
-        1px solid #344851 !important;
-}
-
-.breadcrumb > li + li:before {
-    color:
-        #71848b !important;
-}
-
-
-/* =========================================================
-   ALERTS
-   ========================================================= */
-
-.alert {
-    background:
-        rgba(22, 34, 40, 0.96) !important;
-
-    color:
-        var(--text) !important;
-
-    border:
-        1px solid #465b64 !important;
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.5);
-}
-
-
-/* =========================================================
-   DROPDOWNS
-   ========================================================= */
-
-.dropdown-menu {
-    background:
-        #101b20 !important;
-
-    border:
-        1px solid #465a63 !important;
-
-    box-shadow:
-        0 8px 20px rgba(0,0,0,0.75);
-}
-
-.dropdown-menu > li > a {
-    color:
-        var(--text) !important;
-}
-
-.dropdown-menu > li > a:hover {
-    background:
-        #293d46 !important;
-
-    color:
-        #e5f2f5 !important;
-}
-
-
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
-
-.navbar,
-.navbar-default {
-    background:
-        linear-gradient(
-            180deg,
-            #17262d,
-            #0c151a
-        ) !important;
-
-    border-color:
-        #40545d !important;
-
-    box-shadow:
-        0 3px 15px rgba(0,0,0,0.65);
-}
-
-
-.navbar-default .navbar-nav > li > a {
-    color:
-        #b9c8cd !important;
-}
-
-
-.navbar-default .navbar-nav > li > a:hover {
-    background:
-        #263b44 !important;
-
-    color:
-        #e3eff2 !important;
-}
-
-
-/* =========================================================
-   WOLF / IMAGE BORDERS
-   ========================================================= */
+/* =========================
+   IMAGES
+   ========================= */
 
 img {
     border-color:
-        rgba(74, 95, 104, 0.65);
+        #40555e !important;
 }
 
 
-/* =========================================================
-   PROFILE IMAGE
-   ========================================================= */
+/* =========================
+   PROFILE / DEN IMAGE AREAS
+   ========================= */
 
-.profile-img,
-.user-image {
+.featured-wolf {
+    border-color:
+        #4d636c !important;
+
     box-shadow:
-        0 5px 18px rgba(0,0,0,0.75);
-
-    border:
-        1px solid #536a74 !important;
+        0 5px 18px rgba(0,0,0,0.7) !important;
 }
 
 
-/* =========================================================
-   SPOILERS
-   ========================================================= */
+/* =========================
+   NAVIGATION
+   ========================= */
 
-.spoiler {
+.navbar {
     background:
-        #101a1f !important;
+        linear-gradient(
+            #1a2a31,
+            #0d161b
+        ) !important;
 
-    border:
-        1px solid #40545d !important;
+    border-color:
+        #3f555e !important;
 
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.65) !important;
+}
+
+
+.navbar a {
     color:
-        var(--text) !important;
+        #c0cdd1 !important;
 }
 
 
-/* =========================================================
-   SCROLLBAR
-   ========================================================= */
-
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background:
-        #080d10;
-}
-
-::-webkit-scrollbar-thumb {
-    background:
-        #344952;
-
-    border:
-        1px solid #526873;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background:
-        #526a74;
-}
-
-
-/* =========================================================
-   SELECTION
-   ========================================================= */
-
-::selection {
-    background:
-        #526d78;
-
+.navbar a:hover {
     color:
-        #ffffff;
-}
-
-
-/* =========================================================
-   SUBTLE STORM LIGHTNING
-   ========================================================= */
-
-@keyframes stormFlash {
-
-    0% {
-        box-shadow:
-            0 0 0 rgba(200,225,232,0);
-    }
-
-    92% {
-        box-shadow:
-            0 0 0 rgba(200,225,232,0);
-    }
-
-    94% {
-        box-shadow:
-            0 0 35px rgba(190,220,228,0.08);
-    }
-
-    95% {
-        box-shadow:
-            0 0 5px rgba(190,220,228,0.02);
-    }
-
-    96% {
-        box-shadow:
-            0 0 25px rgba(190,220,228,0.06);
-    }
-
-    100% {
-        box-shadow:
-            0 0 0 rgba(200,225,232,0);
-    }
-}
-
-#main {
-    animation:
-        stormFlash 13s infinite;
-}
-
-
-/* =========================================================
-   DARKEN COMMON CONTENT AREAS
-   ========================================================= */
-
-.container,
-.container-fluid {
-    color:
-        var(--text) !important;
-}
-
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-footer {
-    background:
-        #080d10 !important;
-
-    color:
-        #899aa1 !important;
-
-    border-top:
-        1px solid #344850 !important;
-}
-
-
-/* =========================================================
-   EXTRA SHADOWING
-   ========================================================= */
-
-.table,
-.panel,
-.alert,
-.dropdown-menu {
-    text-shadow:
-        0 1px 1px rgba(0,0,0,0.7);
-}
-
-
-/* =========================================================
-   END — HURRICANE
-   ========================================================= */
+        #ffffff
