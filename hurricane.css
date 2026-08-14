@@ -1,62 +1,173 @@
-/* HURRICANE - WOLVDEN TEST THEME */
+/* =========================================================
+   HURRICANE — WOLVDEN DARK STORM THEME
+   ========================================================= */
 
+/* PAGE */
 body {
     background-color: #080d10 !important;
-    color: #d8e2e5 !important;
+    color: #d5dee1 !important;
+    background-image:
+        linear-gradient(
+            rgba(5, 9, 12, 0.80),
+            rgba(8, 13, 17, 0.94)
+        ) !important;
+    background-attachment: fixed !important;
 }
 
+
+/* TEXT */
+p,
+td,
+th,
+li,
+label {
+    color: #d5dee1 !important;
+}
+
+
+/* LINKS */
 a {
-    color: #b8d2da !important;
+    color: #a9c7d0 !important;
 }
 
+a:hover {
+    color: #e1f0f4 !important;
+}
+
+
+/* HEADERS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #b9d4dc !important;
+    text-shadow: 0 1px 3px #000 !important;
+}
+
+
+/* TABLES */
 .table {
-    background-color: #111a1f !important;
-    color: #d8e2e5 !important;
-    border-color: #455a63 !important;
+    background-color: #10191e !important;
+    color: #d5dee1 !important;
+    border-color: #40545d !important;
 }
 
 .table th {
     background-color: #263942 !important;
-    color: #e3f0f3 !important;
-    border-color: #455a63 !important;
+    color: #dcebef !important;
+    border-color: #50656e !important;
 }
 
 .table td {
-    background-color: #111a1f !important;
-    color: #d8e2e5 !important;
+    background-color: #111b20 !important;
+    color: #d5dee1 !important;
     border-color: #30434b !important;
 }
 
+
+/* TABLE STRIPES */
+.table-striped > tbody > tr:nth-of-type(odd) > td {
+    background-color: #172329 !important;
+}
+
+
+/* TABLE HOVER */
+.table-hover > tbody > tr:hover > td {
+    background-color: #293d45 !important;
+}
+
+
+/* BUTTONS */
 .btn {
     background-color: #263942 !important;
-    color: #d8e2e5 !important;
-    border-color: #536b75 !important;
+    color: #d5dee1 !important;
+    border: 1px solid #526a73 !important;
 }
 
 .btn:hover {
     background-color: #3a535d !important;
     color: #ffffff !important;
+    border-color: #9bb5bd !important;
 }
 
+
+/* INPUTS */
 input,
 textarea,
 select {
     background-color: #0c151a !important;
-    color: #d8e2e5 !important;
-    border-color: #455a63 !important;
+    color: #d5dee1 !important;
+    border: 1px solid #40545d !important;
 }
 
+
+/* CHAT */
 #chatMessagePinned {
     background-color: #182830 !important;
-    color: #d8e2e5 !important;
+    color: #d5dee1 !important;
     border-color: #526973 !important;
 }
 
-hr {
-    border-top: 1px solid #435862 !important;
+
+/* BREADCRUMBS */
+.breadcrumb-nav {
+    background-color: #0e171c !important;
+    border-color: #40545d !important;
 }
 
+
+/* HORIZONTAL LINES */
+hr {
+    border-top: 1px solid #40545d !important;
+}
+
+
+/* IMAGES */
+img {
+    border-color: #40545d !important;
+}
+
+
+/* DROPDOWNS */
+.dropdown-menu {
+    background-color: #101a1f !important;
+    border-color: #40545d !important;
+}
+
+.dropdown-menu > li > a {
+    color: #d5dee1 !important;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #293d45 !important;
+    color: #ffffff !important;
+}
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080d10;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #344a53;
+    border: 1px solid #526873;
+}
+
+
+/* TEXT SELECTION */
 ::selection {
     background-color: #526d78 !important;
     color: #ffffff !important;
 }
+
+
+/* =========================================================
+   END
+   ========================================================= */
