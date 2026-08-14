@@ -1,192 +1,403 @@
-/* =========================================
+/* =====================================================
    HURRICANE - WOLVDEN
-   REAL BACKGROUND + WHITE TEXT + ROUNDED
-   ========================================= */
+   REALISTIC DARK STORM
+   ===================================================== */
 
-/* PAGE BACKGROUND */
+
+/* =========================
+   PAGE BACKGROUND
+   ========================= */
+
 body {
-    background-color: #05080b !important;
-    background-image:
+    background:
         linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.75)
+            rgba(0,0,0,0.48),
+            rgba(0,0,0,0.72)
         ),
-        url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Katrina_Storm.jpg") !important;
+        url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Katrina_Storm.jpg")
+        center center / cover fixed no-repeat !important;
 
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
+    background-color: #05080b !important;
 }
 
 
-/* MAIN PAGE */
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
 #main {
-    background: rgba(5,10,14,.88) !important;
-    color: white !important;
+    background: rgba(7,12,16,0.82) !important;
+    color: #fff !important;
+
+    box-shadow:
+        0 0 35px rgba(0,0,0,0.9) !important;
 }
 
 
-/* SIDEBAR */
+/* =========================
+   SIDEBAR
+   ========================= */
+
 #sidebar {
-    background: rgba(5,10,14,.94) !important;
-    color: white !important;
+    background: rgba(5,9,12,0.94) !important;
+    color: #fff !important;
 }
 
 
-/* ALL TEXT */
-#main *,
-#sidebar *,
-footer *,
-.navbar *,
-.container *,
-body {
-    color: white !important;
+/* =========================
+   CARDS
+   ========================= */
+
+#main .card,
+#main .card-header,
+#main .card-body {
+    background:
+        rgba(13,21,26,0.91) !important;
+
+    color: #fff !important;
+
+    border-color:
+        #61757d !important;
+
+    border-radius:
+        18px !important;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.75) !important;
 }
 
 
-/* LINKS */
-a,
-a:visited,
-a:hover {
-    color: white !important;
+/* =========================
+   TABLES
+   ========================= */
+
+#main table {
+    background:
+        rgba(10,17,21,0.92) !important;
+
+    color: #fff !important;
+
+    border-radius:
+        18px !important;
+
+    overflow:
+        hidden !important;
+
+    border:
+        1px solid #61757d !important;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.75) !important;
 }
 
 
-/* HEADERS */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: white !important;
+#main table th {
+    background:
+        #263940 !important;
+
+    color:
+        #fff !important;
+
+    border-color:
+        #60747b !important;
 }
 
 
-/* =========================================
-   WOLVDEN TABLES / BOXES
-   ========================================= */
+#main table td {
+    background:
+        rgba(12,20,25,0.90) !important;
 
-table {
-    background: rgba(8,14,18,.94) !important;
-    border-color: #60747c !important;
-    border-radius: 15px !important;
-    overflow: hidden !important;
-}
+    color:
+        #fff !important;
 
-table tr,
-table td,
-table th {
-    background-color: rgba(10,17,22,.90) !important;
-    color: white !important;
-    border-color: #52666e !important;
-}
-
-table th {
-    background-color: rgba(40,56,63,.96) !important;
+    border-color:
+        #40545c !important;
 }
 
 
-/* =========================================
-   ROUNDED EVERYTHING THAT CAN BE A BOX
-   ========================================= */
+/* =========================
+   ALL TEXT
+   ========================= */
 
-.panel,
-.well,
-.alert,
-.table,
-.card {
-    background: rgba(12,20,25,.90) !important;
-    border: 1px solid #60747c !important;
-    border-radius: 18px !important;
-    overflow: hidden !important;
+#main,
+#main p,
+#main span,
+#main div,
+#main td,
+#main th,
+#main li,
+#main label,
+#sidebar,
+#sidebar p,
+#sidebar span,
+#sidebar div,
+#sidebar li {
+    color: #fff !important;
 }
 
 
-/* =========================================
-   WOLF IMAGES
-   ========================================= */
+/* =========================
+   LINKS
+   ========================= */
 
-/* Common image containers */
-img[src*="wolf"],
-img[src*="wolves"],
-img[src*="wolf_"] {
-    border-radius: 50% !important;
+#main a,
+#sidebar a {
+    color: #fff !important;
+}
+
+#main a:hover,
+#sidebar a:hover {
+    color: #fff !important;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,0.8) !important;
 }
 
 
-/* Make image itself circular */
-img {
-    transition: .3s ease !important;
+/* =========================
+   LEAD WOLF
+   ========================= */
+
+/* Wolvden uses .w-50 for the lead wolf image/link */
+
+.w-50 {
+    border-radius:
+        50% !important;
+
+    overflow:
+        hidden !important;
 }
 
 
-/* =========================================
+.w-50 img {
+    border-radius:
+        50% !important;
+
+    border:
+        4px solid #71858c !important;
+
+    box-shadow:
+        0 0 18px rgba(0,0,0,0.9) !important;
+}
+
+
+/* =========================
+   FEATURED WOLF
+   ========================= */
+
+.featured-wolf {
+    border-radius:
+        18px !important;
+
+    overflow:
+        hidden !important;
+}
+
+
+.featured-wolf img {
+    border-radius:
+        50% !important;
+
+    border:
+        4px solid #71858c !important;
+
+    box-shadow:
+        0 0 18px rgba(0,0,0,0.9) !important;
+}
+
+
+/* =========================
+   WOLF PREVIEW CARDS
+   ========================= */
+
+/* Actual card image elements */
+
+.form-row .card-img-top {
+    border-radius:
+        50% !important;
+
+    border:
+        4px solid #71858c !important;
+
+    box-shadow:
+        0 0 15px rgba(0,0,0,0.9) !important;
+}
+
+
+/* =========================
+   OTHER CARD IMAGES
+   ========================= */
+
+.card-img-top {
+    border-radius:
+        50% !important;
+}
+
+
+/* =========================
    BUTTONS
-   ========================================= */
+   ========================= */
 
-button,
-.btn,
-input[type="submit"],
-input[type="button"] {
-    background: #17252c !important;
-    color: white !important;
-    border: 1px solid #71858c !important;
-    border-radius: 10px !important;
+#main .btn,
+#main button {
+    background:
+        #1c2b31 !important;
+
+    color:
+        #fff !important;
+
+    border:
+        1px solid #71858c !important;
+
+    border-radius:
+        10px !important;
 }
 
 
-/* =========================================
+#main .btn:hover,
+#main button:hover {
+    background:
+        #354b54 !important;
+
+    color:
+        #fff !important;
+
+    border-color:
+        #fff !important;
+}
+
+
+/* =========================
    INPUTS
-   ========================================= */
+   ========================= */
 
-input,
-textarea,
-select {
-    background: #080f13 !important;
-    color: white !important;
-    border: 1px solid #61757d !important;
+#main input,
+#main textarea,
+#main select {
+    background:
+        #080f13 !important;
+
+    color:
+        #fff !important;
+
+    border:
+        1px solid #61757d !important;
 }
 
 
-/* =========================================
-   STORM BORDER GLOW
-   ========================================= */
+/* =========================
+   CHAT
+   ========================= */
+
+#chatMessagePinned.s-chat-message__pinned {
+    background:
+        rgba(10,18,23,0.94) !important;
+
+    color:
+        #fff !important;
+
+    border:
+        1px solid #61757d !important;
+
+    border-radius:
+        14px !important;
+}
+
+
+/* =========================
+   BREADCRUMBS
+   ========================= */
+
+.breadcrumb {
+    background:
+        rgba(7,13,17,0.90) !important;
+
+    border:
+        1px solid #61757d !important;
+
+    border-radius:
+        12px !important;
+}
+
+.breadcrumb a {
+    color:
+        #fff !important;
+}
+
+
+/* =========================
+   STORM BOX GLOW
+   ========================= */
 
 @keyframes stormGlow {
 
-    0%, 85%, 100% {
+    0%, 88%, 100% {
         box-shadow:
-            0 5px 20px rgba(0,0,0,.75);
+            0 5px 18px rgba(0,0,0,0.75);
     }
 
     90% {
         box-shadow:
-            0 5px 20px rgba(0,0,0,.75),
-            0 0 14px rgba(210,235,240,.35);
+            0 5px 18px rgba(0,0,0,0.75),
+            0 0 12px rgba(220,240,245,0.25);
     }
 
-    93% {
+    92% {
         box-shadow:
-            0 5px 20px rgba(0,0,0,.75),
-            0 0 25px rgba(210,235,240,.20);
+            0 5px 18px rgba(0,0,0,0.75),
+            0 0 24px rgba(220,240,245,0.38);
+    }
+
+    94% {
+        box-shadow:
+            0 5px 18px rgba(0,0,0,0.75);
     }
 }
 
-table,
-.panel,
-.well,
-.alert {
-    animation: stormGlow 12s infinite !important;
+
+#main .card,
+#main table {
+    animation:
+        stormGlow 13s infinite;
 }
 
 
-/* =========================================
+/* =========================
+   HEADINGS
+   ========================= */
+
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+    color:
+        #fff !important;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,0.25);
+}
+
+
+/* =========================
+   HORIZONTAL LINES
+   ========================= */
+
+#main hr {
+    border-top:
+        1px solid #61757d !important;
+}
+
+
+/* =========================
    FOOTER
-   ========================================= */
+   ========================= */
 
 footer {
-    background: rgba(3,7,10,.96) !important;
-    color: white !important;
+    background:
+        rgba(3,7,10,0.95) !important;
+
+    color:
+        #fff !important;
 }
