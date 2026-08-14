@@ -1,7 +1,77 @@
+/* HURRICANE TEST THEME */
+
+html,
 body {
-    background: red !important;
+    background-color: #05080b !important;
+    color: #ffffff !important;
 }
 
-* {
-    color: lime !important;
+/* Main page */
+body {
+    background-image:
+        linear-gradient(
+            rgba(3, 7, 10, 0.55),
+            rgba(3, 7, 10, 0.80)
+        ) !important;
+    background-attachment: fixed !important;
+}
+
+/* Main content */
+#main {
+    background-color: rgba(8, 15, 20, 0.90) !important;
+    color: #ffffff !important;
+}
+
+/* ALL TEXT */
+body * {
+    color: #ffffff !important;
+}
+
+/* Links */
+a,
+a:visited,
+a:hover {
+    color: #ffffff !important;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff !important;
+}
+
+/* Tables */
+table {
+    background-color: rgba(10, 18, 23, 0.95) !important;
+}
+
+th {
+    background-color: #263941 !important;
+    color: #ffffff !important;
+}
+
+td {
+    background-color: #111c22 !important;
+    color: #ffffff !important;
+}
+
+/* Buttons */
+button,
+.btn {
+    background-color: #263941 !important;
+    color: #ffffff !important;
+    border: 1px solid #81959d !important;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    background-color: #0b1216 !important;
+    color: #ffffff !important;
+    border: 1px solid #657a82 !important;
 }
