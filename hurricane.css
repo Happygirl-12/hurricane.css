@@ -1,358 +1,192 @@
-/* =========================================================
-   HURRICANE — REALISTIC STORM
-   ========================================================= */
+/* =========================================
+   HURRICANE - WOLVDEN
+   REAL BACKGROUND + WHITE TEXT + ROUNDED
+   ========================================= */
 
-html,
+/* PAGE BACKGROUND */
 body {
     background-color: #05080b !important;
-    color: #ffffff !important;
-}
-
-/* ================= BACKGROUND ================= */
-
-body {
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.62),
-            rgba(2, 6, 10, 0.82)
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.75)
         ),
         url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Katrina_Storm.jpg") !important;
 
-    background-size: cover !important;
-    background-position: center center !important;
-    background-attachment: fixed !important;
     background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
 }
 
 
-/* ================= ALL TEXT WHITE ================= */
-
-body,
-body p,
-body span,
-body div,
-body td,
-body th,
-body li,
-body label,
-body small,
-body strong,
-body b,
-body em,
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
-    color: #ffffff !important;
-}
-
-
-/* ================= LINKS ================= */
-
-a,
-a:visited {
-    color: #ffffff !important;
-}
-
-a:hover {
-    color: #ffffff !important;
-
-    text-shadow:
-        0 0 5px #ffffff,
-        0 0 12px rgba(190, 225, 235, 0.8) !important;
-}
-
-
-/* ================= MAIN CONTENT ================= */
-
+/* MAIN PAGE */
 #main {
-    background:
-        rgba(5, 10, 14, 0.88) !important;
-
-    color: #ffffff !important;
-
-    border:
-        1px solid rgba(190, 215, 225, 0.40) !important;
-
-    box-shadow:
-        0 0 40px rgba(0, 0, 0, 0.95),
-        inset 0 0 35px rgba(0, 0, 0, 0.45) !important;
+    background: rgba(5,10,14,.88) !important;
+    color: white !important;
 }
 
 
-/* ================= DARK STORM BOXES ================= */
-
-.panel,
-.panel-default,
-.alert,
-.table,
-.well {
-    background:
-        linear-gradient(
-            145deg,
-            rgba(34, 46, 53, 0.94),
-            rgba(7, 13, 17, 0.97)
-        ) !important;
-
-    color: #ffffff !important;
-
-    border:
-        1px solid rgba(160, 185, 195, 0.48) !important;
-
-    box-shadow:
-        0 7px 22px rgba(0, 0, 0, 0.85),
-        inset 0 0 20px rgba(0, 0, 0, 0.35) !important;
+/* SIDEBAR */
+#sidebar {
+    background: rgba(5,10,14,.94) !important;
+    color: white !important;
 }
 
 
-/* ================= BOX TWINKLE ================= */
-
-@keyframes stormTwinkle {
-
-    0%,
-    82%,
-    100% {
-        border-color: rgba(160, 185, 195, 0.40);
-    }
-
-    86% {
-        border-color: rgba(230, 245, 250, 0.85);
-    }
-
-    88% {
-        border-color: rgba(160, 200, 210, 0.50);
-    }
-
-    90% {
-        border-color: rgba(240, 250, 255, 0.90);
-    }
-
-    92% {
-        border-color: rgba(160, 185, 195, 0.40);
-    }
-}
-
-.panel,
-.panel-default,
-.alert,
-.table,
-.well {
-    animation: stormTwinkle 13s infinite;
+/* ALL TEXT */
+#main *,
+#sidebar *,
+footer *,
+.navbar *,
+.container *,
+body {
+    color: white !important;
 }
 
 
-/* ================= PANEL HEADERS ================= */
-
-.panel-heading,
-.table th {
-    background:
-        linear-gradient(
-            180deg,
-            rgba(62, 78, 85, 0.98),
-            rgba(20, 29, 34, 0.98)
-        ) !important;
-
-    color: #ffffff !important;
-
-    border-color:
-        rgba(190, 215, 225, 0.50) !important;
-
-    text-shadow:
-        0 2px 4px #000000 !important;
+/* LINKS */
+a,
+a:visited,
+a:hover {
+    color: white !important;
 }
 
 
-/* ================= TABLES ================= */
+/* HEADERS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white !important;
+}
+
+
+/* =========================================
+   WOLVDEN TABLES / BOXES
+   ========================================= */
 
 table {
-    background:
-        rgba(7, 13, 17, 0.95) !important;
-
-    color: #ffffff !important;
+    background: rgba(8,14,18,.94) !important;
+    border-color: #60747c !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
 }
 
-table td {
-    background:
-        rgba(10, 18, 23, 0.95) !important;
-
-    color: #ffffff !important;
-
-    border-color:
-        rgba(120, 145, 155, 0.35) !important;
+table tr,
+table td,
+table th {
+    background-color: rgba(10,17,22,.90) !important;
+    color: white !important;
+    border-color: #52666e !important;
 }
 
-table tr:hover td {
-    background:
-        rgba(55, 72, 80, 0.80) !important;
-
-    color: #ffffff !important;
+table th {
+    background-color: rgba(40,56,63,.96) !important;
 }
 
 
-/* ================= BUTTONS ================= */
+/* =========================================
+   ROUNDED EVERYTHING THAT CAN BE A BOX
+   ========================================= */
+
+.panel,
+.well,
+.alert,
+.table,
+.card {
+    background: rgba(12,20,25,.90) !important;
+    border: 1px solid #60747c !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+}
+
+
+/* =========================================
+   WOLF IMAGES
+   ========================================= */
+
+/* Common image containers */
+img[src*="wolf"],
+img[src*="wolves"],
+img[src*="wolf_"] {
+    border-radius: 50% !important;
+}
+
+
+/* Make image itself circular */
+img {
+    transition: .3s ease !important;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
 
 button,
 .btn,
 input[type="submit"],
 input[type="button"] {
-    background:
-        linear-gradient(
-            180deg,
-            #3a4d54,
-            #111b20
-        ) !important;
-
-    color: #ffffff !important;
-
-    border:
-        1px solid #8da3aa !important;
-
-    box-shadow:
-        0 4px 10px rgba(0,0,0,0.75) !important;
-}
-
-button:hover,
-.btn:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
-    background:
-        #526870 !important;
-
-    color: #ffffff !important;
-
-    border-color:
-        #ffffff !important;
-
-    box-shadow:
-        0 0 15px rgba(220,240,245,0.35) !important;
+    background: #17252c !important;
+    color: white !important;
+    border: 1px solid #71858c !important;
+    border-radius: 10px !important;
 }
 
 
-/* ================= INPUTS ================= */
+/* =========================================
+   INPUTS
+   ========================================= */
 
 input,
 textarea,
 select {
-    background:
-        rgba(4, 9, 12, 0.97) !important;
-
-    color:
-        #ffffff !important;
-
-    border:
-        1px solid #71868e !important;
+    background: #080f13 !important;
+    color: white !important;
+    border: 1px solid #61757d !important;
 }
 
 
-/* ================= NAVIGATION ================= */
+/* =========================================
+   STORM BORDER GLOW
+   ========================================= */
 
-.navbar,
-.navbar-default {
-    background:
-        rgba(4, 9, 12, 0.95) !important;
+@keyframes stormGlow {
 
-    border-color:
-        #62777e !important;
+    0%, 85%, 100% {
+        box-shadow:
+            0 5px 20px rgba(0,0,0,.75);
+    }
+
+    90% {
+        box-shadow:
+            0 5px 20px rgba(0,0,0,.75),
+            0 0 14px rgba(210,235,240,.35);
+    }
+
+    93% {
+        box-shadow:
+            0 5px 20px rgba(0,0,0,.75),
+            0 0 25px rgba(210,235,240,.20);
+    }
 }
 
-.navbar a,
-.navbar-default .navbar-nav > li > a {
-    color:
-        #ffffff !important;
-}
-
-
-/* ================= CIRCULAR WOLF IMAGES ================= */
-
-/*
-   These target image elements commonly used for
-   wolf/profile displays.
-*/
-
-.wolf-card img,
-.wolf-img,
-.wolf-image,
-.wolf-card > img {
-    border-radius: 50% !important;
-
-    object-fit: cover !important;
-
-    border:
-        3px solid rgba(215, 235, 240, 0.75) !important;
-
-    box-shadow:
-        0 0 15px rgba(0,0,0,0.95),
-        0 0 12px rgba(180,220,230,0.25) !important;
+table,
+.panel,
+.well,
+.alert {
+    animation: stormGlow 12s infinite !important;
 }
 
 
-/* Hover glow */
-
-.wolf-card img:hover,
-.wolf-img:hover,
-.wolf-image:hover {
-    border-color:
-        #ffffff !important;
-
-    box-shadow:
-        0 0 18px rgba(255,255,255,0.45),
-        0 0 30px rgba(160,210,225,0.30) !important;
-}
-
-
-/* ================= IMAGES ================= */
-
-img {
-    border-color:
-        rgba(180,205,215,0.55) !important;
-}
-
-
-/* ================= HORIZONTAL LINES ================= */
-
-hr {
-    border-top:
-        1px solid rgba(190,215,225,0.45) !important;
-}
-
-
-/* ================= FOOTER ================= */
+/* =========================================
+   FOOTER
+   ========================================= */
 
 footer {
-    background:
-        rgba(2, 6, 9, 0.97) !important;
-
-    color:
-        #ffffff !important;
-
-    border-top:
-        1px solid #647980 !important;
-}
-
-
-/* ================= SCROLLBAR ================= */
-
-::-webkit-scrollbar {
-    width: 11px;
-}
-
-::-webkit-scrollbar-track {
-    background: #05080b;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #4b6068;
-
-    border:
-        1px solid #8da1a8;
-}
-
-
-/* ================= SELECTION ================= */
-
-::selection {
-    background: #657b83 !important;
-    color: #ffffff !important;
+    background: rgba(3,7,10,.96) !important;
+    color: white !important;
 }
