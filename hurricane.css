@@ -1,428 +1,365 @@
-/* ==========================================================
-   🌧️ HURRICANE DEN — DARK STORM + LEAVES
-   ========================================================== */
+/* =========================================================
+   STORM + FOREST LEAVES WOLVDEN DEN
+   Background: storm image
+   Navigation tiles: leaf image
+   ========================================================= */
 
 
-/* ==========================================================
-   HURRICANE BACKGROUND
-   ========================================================== */
+/* =========================
+   BACKGROUND
+   ========================= */
 
 html,
 body {
-    background-color: #050c10 !important;
+    background: #071416 url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png")
+        center center / cover fixed no-repeat !important;
+    color: #e7eeee !important;
 }
 
+
+/* Keep the storm background fixed while scrolling */
 body {
-    background-image:
-        linear-gradient(
-            rgba(4, 12, 16, 0.15),
-            rgba(2, 8, 12, 0.25)
-        ),
-        url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png") !important;
-
-    background-position: center center !important;
-    background-size: cover !important;
     background-attachment: fixed !important;
-    background-repeat: no-repeat !important;
-
-    color: #dce6e8 !important;
 }
 
 
-/* ==========================================================
-   MAIN CONTENT — MAKE HURRICANE VISIBLE
-   ========================================================== */
+/* =========================
+   MAIN DEN AREA
+   ========================= */
 
 #main {
-    background: rgba(4, 13, 17, 0.72) !important;
-
-    border-left: 1px solid rgba(180, 200, 205, 0.30);
-    border-right: 1px solid rgba(180, 200, 205, 0.30);
-
-    box-shadow:
-        0 0 35px rgba(0, 0, 0, 0.85),
-        inset 0 0 35px rgba(0, 0, 0, 0.35);
+    background: rgba(5, 13, 15, 0.82) !important;
+    border: 1px solid rgba(100, 135, 137, 0.35) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.75) !important;
+    padding: 14px !important;
 }
 
 
-/* ==========================================================
-   MAIN CARDS / PACK LEADER
-   ========================================================== */
-
-#main .card {
-    background:
-        rgba(5, 16, 20, 0.86) !important;
-
-    border-color:
-        rgba(150, 180, 185, 0.32) !important;
-
-    color: #dce6e8 !important;
-
-    box-shadow:
-        inset 0 0 18px rgba(0, 0, 0, 0.55),
-        0 4px 15px rgba(0, 0, 0, 0.55);
-}
-
-
-/* ==========================================================
-   PACK LEADER TABLE
-   ========================================================== */
-
-#main .table {
-    background: rgba(4, 13, 17, 0.80) !important;
-
-    color: #dce6e8 !important;
-}
-
-#main .table th {
-    background:
-        linear-gradient(
-            90deg,
-            rgba(3, 11, 14, 0.98),
-            rgba(18, 34, 39, 0.95),
-            rgba(3, 11, 14, 0.98)
-        ) !important;
-
-    color: #e4edef !important;
-
-    border-color:
-        rgba(150, 180, 185, 0.25) !important;
-}
-
-#main .table td {
-    background: rgba(6, 18, 22, 0.72) !important;
-
-    color: #dce6e8 !important;
-
-    border-color:
-        rgba(130, 160, 165, 0.18) !important;
-}
-
-
-/* ==========================================================
-   🌿 ALL SIX DEN BUTTONS
-   ========================================================== */
-
-
-/* PACK DYNASTY */
-
-img[src$="packdynasty.png"] {
-    content: url(
-        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
-    ) !important;
-}
-
-
-/* PACK OVERVIEW */
-
-img[src$="packoverview.png"] {
-    content: url(
-        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
-    ) !important;
-}
-
-
-/* BREEDING */
-
-img[src$="breeding.png"] {
-    content: url(
-        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
-    ) !important;
-}
-
-
-/* PUPSITTING */
-
-img[src$="pupsitting.png"] {
-    content: url(
-        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
-    ) !important;
-}
-
-
-/* NESTING */
-
-img[src$="nesting.png"] {
-    content: url(
-        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
-    ) !important;
-}
-
-
-/* SOCIALIZING */
-
-img[src$="socializing.png"] {
-    content: url(
-        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
-    ) !important;
-}
-
-
-/* ==========================================================
-   DEN BUTTON APPEARANCE
-   ========================================================== */
-
-#main img[src$="packdynasty.png"],
-#main img[src$="packoverview.png"],
-#main img[src$="breeding.png"],
-#main img[src$="pupsitting.png"],
-#main img[src$="nesting.png"],
-#main img[src$="socializing.png"] {
-
-    object-fit: cover !important;
-
-    filter:
-        brightness(0.72)
-        saturate(0.70)
-        contrast(1.08) !important;
-
-    transition:
-        filter 0.3s ease,
-        transform 0.3s ease;
-}
-
-
-/* ==========================================================
-   LEAF BUTTON HOVER
-   ========================================================== */
-
-#main a:hover img[src$="packdynasty.png"],
-#main a:hover img[src$="packoverview.png"],
-#main a:hover img[src$="breeding.png"],
-#main a:hover img[src$="pupsitting.png"],
-#main a:hover img[src$="nesting.png"],
-#main a:hover img[src$="socializing.png"] {
-
-    filter:
-        brightness(0.90)
-        saturate(0.85)
-        contrast(1.08) !important;
-}
-
-
-/* ==========================================================
-   TEXT ON THE SIX BUTTONS
-   ========================================================== */
-
-#main .card a {
-    color: #edf4f5 !important;
-
-    text-shadow:
-        0 2px 4px #000000,
-        0 0 8px #000000;
-}
-
-
-/* ==========================================================
-   SIDEBAR — DARK STORM COLOR
-   ========================================================== */
+/* =========================
+   SIDEBAR
+   ========================= */
 
 #sidebar {
-    background: rgba(3, 10, 13, 0.82) !important;
+    background: rgba(3, 10, 12, 0.78) !important;
+    border-radius: 18px !important;
 }
 
+
+/* Sidebar cards */
 #sidebar .card {
-    background:
-        rgba(7, 18, 22, 0.90) !important;
-
-    border-color:
-        rgba(145, 175, 180, 0.30) !important;
-
-    color: #dce6e8 !important;
-
-    box-shadow:
-        inset 0 0 15px rgba(0, 0, 0, 0.55);
+    background: rgba(8, 20, 22, 0.90) !important;
+    border-color: rgba(87, 122, 124, 0.45) !important;
+    border-radius: 14px !important;
+    color: #dce7e7 !important;
 }
 
 
-/* CHAT BOX */
+/* =========================
+   MAIN CARDS
+   ========================= */
 
-#sidebar .s-chat-message,
-#sidebar #chatMessages {
-    background: rgba(5, 14, 18, 0.88) !important;
-
-    color: #dce6e8 !important;
+#main .card {
+    background: rgba(7, 18, 20, 0.88) !important;
+    border: 1px solid rgba(93, 128, 130, 0.45) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.45) !important;
 }
 
 
-/* ==========================================================
-   SECTION HEADERS
-   ========================================================== */
-
-#main .card-header,
-#main h3,
-#main h4 {
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(3, 10, 13, 0.98),
-            rgba(19, 36, 41, 0.95),
-            rgba(3, 10, 13, 0.98)
-        ) !important;
-
-    color: #e3ecee !important;
-
-    border-color:
-        rgba(150, 180, 185, 0.30) !important;
-
-    text-shadow:
-        0 2px 4px #000;
+/* Card headers */
+.card-header,
+#main .card-header {
+    background: rgba(3, 11, 13, 0.94) !important;
+    color: #edf5f5 !important;
+    border: 0 !important;
+    border-radius: 15px 15px 0 0 !important;
 }
 
 
-/* ==========================================================
+/* =========================
+   PACK LEADER / DEN INFO
+   ========================= */
+
+.table {
+    background: rgba(6, 16, 18, 0.88) !important;
+    color: #e5eeee !important;
+    border-color: rgba(91, 125, 127, 0.35) !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+}
+
+
+/* Table headers */
+.table th {
+    background: rgba(3, 11, 13, 0.95) !important;
+    color: #eaf4f4 !important;
+    border-color: rgba(91, 125, 127, 0.35) !important;
+}
+
+
+/* Table cells */
+.table td {
+    background: rgba(9, 21, 23, 0.82) !important;
+    color: #dce7e7 !important;
+    border-color: rgba(91, 125, 127, 0.25) !important;
+}
+
+
+/* Alternating rows */
+.table-striped tbody tr:nth-of-type(odd) td {
+    background: rgba(14, 30, 32, 0.82) !important;
+}
+
+
+/* =========================
+   DEN NAVIGATION IMAGES
+   ========================= */
+
+
+/*
+   These replace the six default navigation images
+   with YOUR leaf image.
+*/
+
+img[src$="packdynasty.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+}
+
+img[src$="packoverview.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+}
+
+img[src$="breeding.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+}
+
+img[src$="pupsitting.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+}
+
+img[src$="nesting.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+}
+
+img[src$="socializing.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+}
+
+
+/* Make the navigation images fit their boxes */
+img[src$="packdynasty.png"],
+img[src$="packoverview.png"],
+img[src$="breeding.png"],
+img[src$="pupsitting.png"],
+img[src$="nesting.png"],
+img[src$="socializing.png"] {
+    object-fit: cover !important;
+}
+
+
+/* =========================
+   NAVIGATION TILE CONTAINERS
+   ========================= */
+
+#main a img {
+    border-radius: 0 !important;
+}
+
+
+/* Dark overlay effect around navigation */
+#main .row img {
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.65) !important;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn {
+    background: rgba(7, 24, 27, 0.95) !important;
+    color: #e5eeee !important;
+    border: 1px solid rgba(103, 145, 147, 0.55) !important;
+    border-radius: 10px !important;
+}
+
+
+.btn:hover {
+    background: rgba(20, 49, 51, 0.98) !important;
+    color: #ffffff !important;
+    border-color: rgba(140, 177, 178, 0.8) !important;
+}
+
+
+/* =========================
    LINKS
-   ========================================================== */
+   ========================= */
 
 a {
-    color: #d6e4e7 !important;
+    color: #a9c8c8 !important;
 }
+
 
 a:hover {
-    color: #ffffff !important;
-
-    text-shadow:
-        0 0 8px rgba(190, 215, 220, 0.75);
+    color: #e5ffff !important;
+    text-decoration: none !important;
 }
 
 
-/* ==========================================================
-   BUTTONS
-   ========================================================== */
+/* =========================
+   HEADERS
+   ========================= */
 
-.btn,
-button {
-
-    background:
-        linear-gradient(
-            rgba(25, 43, 48, 0.95),
-            rgba(5, 13, 17, 0.95)
-        ) !important;
-
-    border:
-        1px solid rgba(150, 180, 185, 0.40) !important;
-
-    color: #e0e9eb !important;
-}
-
-.btn:hover,
-button:hover {
-
-    background:
-        linear-gradient(
-            rgba(45, 65, 70, 0.95),
-            rgba(7, 18, 22, 0.95)
-        ) !important;
-
-    color: #ffffff !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #e7f1f1 !important;
 }
 
 
-/* ==========================================================
-   WOLF CARDS
-   ========================================================== */
+/* Den section headers */
+.table .subheader {
+    background: rgba(4, 14, 16, 0.94) !important;
+    color: #dceaea !important;
+}
 
-#main .wolf,
+
+/* =========================
+   PACK NAME / DEN TITLE
+   ========================= */
+
+#main h1,
+#main h2 {
+    text-shadow: 0 2px 8px #000 !important;
+}
+
+
+/* =========================
+   WOLF CARDS / CAVE AREAS
+   ========================= */
+
 #main .wolf-card,
-#main .wolfcard {
-
-    background:
-        rgba(4, 13, 17, 0.90) !important;
-
-    border-color:
-        rgba(145, 175, 180, 0.30) !important;
+#main .cave,
+#main .wolf {
+    background: rgba(7, 17, 19, 0.88) !important;
+    border-color: rgba(87, 122, 124, 0.35) !important;
+    border-radius: 14px !important;
 }
 
 
-/* ==========================================================
-   TABLE STRIPES
-   ========================================================== */
+/* =========================
+   FORM ELEMENTS
+   ========================= */
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background:
-        rgba(10, 24, 28, 0.70) !important;
-}
-
-.table-striped tbody tr:nth-of-type(even) {
-    background:
-        rgba(4, 13, 17, 0.70) !important;
-}
-
-
-/* ==========================================================
-   INPUTS
-   ========================================================== */
-
-input,
+.form-control,
+select,
 textarea,
-select {
-
-    background:
-        rgba(3, 11, 14, 0.90) !important;
-
-    border:
-        1px solid rgba(145, 175, 180, 0.35) !important;
-
-    color:
-        #dce6e8 !important;
+input {
+    background: rgba(4, 13, 15, 0.95) !important;
+    color: #e3eeee !important;
+    border: 1px solid rgba(91, 128, 130, 0.55) !important;
+    border-radius: 8px !important;
 }
 
 
-/* ==========================================================
-   SCROLLBAR
-   ========================================================== */
+/* =========================
+   ALERTS
+   ========================= */
+
+.alert {
+    background: rgba(5, 17, 19, 0.92) !important;
+    color: #e4eeee !important;
+    border-radius: 12px !important;
+    border-color: rgba(91, 128, 130, 0.45) !important;
+}
+
+
+/* =========================
+   CHAT BOX
+   ========================= */
+
+#chatMessagePinned.s-chat-message__pinned {
+    background: rgba(5, 16, 18, 0.92) !important;
+    color: #e5eeee !important;
+    border-color: rgba(90, 127, 129, 0.45) !important;
+}
+
+
+/* =========================
+   PACK / CAVE HEADERS
+   ========================= */
+
+#main .table .top,
+#main .table .bottom {
+    background: rgba(4, 13, 15, 0.92) !important;
+    color: #e4eeee !important;
+}
+
+
+/* =========================
+   WOLF IMAGES
+   ========================= */
+
+#main img {
+    border-color: rgba(86, 119, 121, 0.4) !important;
+}
+
+
+/* =========================
+   ROUNDED FEATURED WOLF
+   ========================= */
+
+div.justify-content-between.mb-3 div {
+    border: none !important;
+}
+
+
+/* =========================
+   SCROLLBARS
+   ========================= */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 9px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #040b0e;
+    background: rgba(2, 9, 10, 0.8);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #40565c;
-
-    border:
-        2px solid #071014;
+    background: rgba(64, 94, 96, 0.9);
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #70878c;
+    background: rgba(100, 137, 139, 0.95);
 }
 
 
-/* ==========================================================
-   IMAGE COLOR
-   ========================================================== */
+/* =========================
+   MOBILE
+   ========================= */
 
-#main img {
-    filter:
-        saturate(0.88)
-        contrast(1.04);
-}
+@media (max-width: 900px) {
 
+    body {
+        background-position: center center !important;
+    }
 
-/* ==========================================================
-   STORMY DARK OVERLAY
-   ========================================================== */
+    #main {
+        border-radius: 12px !important;
+        padding: 8px !important;
+    }
 
-body::before {
+    #sidebar {
+        border-radius: 12px !important;
+    }
 
-    content: "";
-
-    position: fixed;
-
-    inset: 0;
-
-    pointer-events: none;
-
-    background:
-        linear-gradient(
-            rgba(80, 105, 110, 0.025),
-            rgba(0, 0, 0, 0.18)
-        );
-
-    z-index: -1;
+    #main .card {
+        border-radius: 12px !important;
+    }
 }
