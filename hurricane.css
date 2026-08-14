@@ -1,62 +1,110 @@
-/* ==========================================
-   HURRICANE DEN THEME
-   ========================================== */
+/* ==========================================================
+   🌧️ HURRICANE DEN — DARK STORM + LEAVES
+   ========================================================== */
 
 
-/* ---------- HURRICANE BACKGROUND ---------- */
+/* ==========================================================
+   HURRICANE BACKGROUND
+   ========================================================== */
+
+html,
+body {
+    background-color: #050c10 !important;
+}
 
 body {
-    background:
+    background-image:
         linear-gradient(
-            rgba(5, 15, 20, 0.25),
-            rgba(2, 8, 12, 0.35)
+            rgba(4, 12, 16, 0.15),
+            rgba(2, 8, 12, 0.25)
         ),
-        url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png")
-        center center / cover fixed no-repeat !important;
+        url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png") !important;
 
-    background-color: #050d11 !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+
+    color: #dce6e8 !important;
 }
 
 
-/* ---------- MAIN PAGE ---------- */
-
-#page {
-    background: rgba(5, 13, 17, 0.82) !important;
-
-    border-left: 2px solid rgba(180, 200, 205, 0.30);
-    border-right: 2px solid rgba(180, 200, 205, 0.30);
-
-    box-shadow:
-        0 0 35px rgba(0,0,0,.9),
-        inset 0 0 35px rgba(0,0,0,.5);
-}
-
-
-/* ---------- MAIN CONTENT ---------- */
+/* ==========================================================
+   MAIN CONTENT — MAKE HURRICANE VISIBLE
+   ========================================================== */
 
 #main {
-    background: rgba(4, 12, 16, 0.72) !important;
+    background: rgba(4, 13, 17, 0.72) !important;
+
+    border-left: 1px solid rgba(180, 200, 205, 0.30);
+    border-right: 1px solid rgba(180, 200, 205, 0.30);
+
+    box-shadow:
+        0 0 35px rgba(0, 0, 0, 0.85),
+        inset 0 0 35px rgba(0, 0, 0, 0.35);
 }
 
 
-/* ---------- SIDEBAR ---------- */
+/* ==========================================================
+   MAIN CARDS / PACK LEADER
+   ========================================================== */
 
-#sidebar .card {
-    background: rgba(5, 14, 18, 0.90) !important;
+#main .card {
+    background:
+        rgba(5, 16, 20, 0.86) !important;
 
-    border-color: rgba(150, 175, 180, 0.35) !important;
+    border-color:
+        rgba(150, 180, 185, 0.32) !important;
 
-    color: #dbe5e7 !important;
+    color: #dce6e8 !important;
+
+    box-shadow:
+        inset 0 0 18px rgba(0, 0, 0, 0.55),
+        0 4px 15px rgba(0, 0, 0, 0.55);
 }
 
-#sidebar {
-    background: rgba(3, 10, 13, 0.65) !important;
+
+/* ==========================================================
+   PACK LEADER TABLE
+   ========================================================== */
+
+#main .table {
+    background: rgba(4, 13, 17, 0.80) !important;
+
+    color: #dce6e8 !important;
+}
+
+#main .table th {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 11, 14, 0.98),
+            rgba(18, 34, 39, 0.95),
+            rgba(3, 11, 14, 0.98)
+        ) !important;
+
+    color: #e4edef !important;
+
+    border-color:
+        rgba(150, 180, 185, 0.25) !important;
+}
+
+#main .table td {
+    background: rgba(6, 18, 22, 0.72) !important;
+
+    color: #dce6e8 !important;
+
+    border-color:
+        rgba(130, 160, 165, 0.18) !important;
 }
 
 
-/* ==========================================
-   PACK DYNASTY
-   ========================================== */
+/* ==========================================================
+   🌿 ALL SIX DEN BUTTONS
+   ========================================================== */
+
+
+/* PACK DYNASTY */
 
 img[src$="packdynasty.png"] {
     content: url(
@@ -65,9 +113,7 @@ img[src$="packdynasty.png"] {
 }
 
 
-/* ==========================================
-   PACK OVERVIEW
-   ========================================== */
+/* PACK OVERVIEW */
 
 img[src$="packoverview.png"] {
     content: url(
@@ -76,9 +122,7 @@ img[src$="packoverview.png"] {
 }
 
 
-/* ==========================================
-   BREEDING
-   ========================================== */
+/* BREEDING */
 
 img[src$="breeding.png"] {
     content: url(
@@ -87,196 +131,285 @@ img[src$="breeding.png"] {
 }
 
 
-/* ==========================================
-   MAKE THE LEAF IMAGES FIT THEIR BOXES
-   ========================================== */
+/* PUPSITTING */
 
-.form-row .card-img-top {
-    object-fit: cover;
+img[src$="pupsitting.png"] {
+    content: url(
+        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
+    ) !important;
 }
 
 
-/* ==========================================
-   DARK OVERLAY ON NAVIGATION CARDS
-   ========================================== */
+/* NESTING */
 
-.form-row .card {
-    background: rgba(4, 12, 15, 0.65) !important;
-
-    border-color: rgba(160, 185, 190, 0.35) !important;
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,.65),
-        inset 0 0 15px rgba(0,0,0,.45);
+img[src$="nesting.png"] {
+    content: url(
+        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
+    ) !important;
 }
 
 
-/* ---------- NAVIGATION TEXT ---------- */
+/* SOCIALIZING */
 
-.form-row .card-title,
-.form-row .card a {
-    color: #f0f5f6 !important;
+img[src$="socializing.png"] {
+    content: url(
+        "https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png"
+    ) !important;
+}
+
+
+/* ==========================================================
+   DEN BUTTON APPEARANCE
+   ========================================================== */
+
+#main img[src$="packdynasty.png"],
+#main img[src$="packoverview.png"],
+#main img[src$="breeding.png"],
+#main img[src$="pupsitting.png"],
+#main img[src$="nesting.png"],
+#main img[src$="socializing.png"] {
+
+    object-fit: cover !important;
+
+    filter:
+        brightness(0.72)
+        saturate(0.70)
+        contrast(1.08) !important;
+
+    transition:
+        filter 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* ==========================================================
+   LEAF BUTTON HOVER
+   ========================================================== */
+
+#main a:hover img[src$="packdynasty.png"],
+#main a:hover img[src$="packoverview.png"],
+#main a:hover img[src$="breeding.png"],
+#main a:hover img[src$="pupsitting.png"],
+#main a:hover img[src$="nesting.png"],
+#main a:hover img[src$="socializing.png"] {
+
+    filter:
+        brightness(0.90)
+        saturate(0.85)
+        contrast(1.08) !important;
+}
+
+
+/* ==========================================================
+   TEXT ON THE SIX BUTTONS
+   ========================================================== */
+
+#main .card a {
+    color: #edf4f5 !important;
 
     text-shadow:
-        0 2px 5px #000,
-        0 0 8px #000;
+        0 2px 4px #000000,
+        0 0 8px #000000;
 }
 
 
-/* ---------- HOVER ---------- */
+/* ==========================================================
+   SIDEBAR — DARK STORM COLOR
+   ========================================================== */
 
-.form-row .card:hover {
-    filter: brightness(1.12);
-
-    box-shadow:
-        0 0 18px rgba(170,195,200,.25),
-        inset 0 0 18px rgba(0,0,0,.5);
-
-    transition: .3s ease;
+#sidebar {
+    background: rgba(3, 10, 13, 0.82) !important;
 }
 
-
-/* ==========================================
-   PACK INFORMATION
-   ========================================== */
-
-#main .card,
-#main .table {
+#sidebar .card {
     background:
-        rgba(6, 17, 21, 0.88) !important;
+        rgba(7, 18, 22, 0.90) !important;
 
     border-color:
-        rgba(150, 175, 180, 0.30) !important;
+        rgba(145, 175, 180, 0.30) !important;
 
-    color: #dbe4e6 !important;
+    color: #dce6e8 !important;
+
+    box-shadow:
+        inset 0 0 15px rgba(0, 0, 0, 0.55);
 }
 
 
-/* ---------- TABLE ROWS ---------- */
+/* CHAT BOX */
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background: rgba(10, 24, 29, 0.75) !important;
+#sidebar .s-chat-message,
+#sidebar #chatMessages {
+    background: rgba(5, 14, 18, 0.88) !important;
+
+    color: #dce6e8 !important;
 }
 
-.table-striped tbody tr:nth-of-type(even) {
-    background: rgba(4, 13, 17, 0.75) !important;
-}
 
+/* ==========================================================
+   SECTION HEADERS
+   ========================================================== */
 
-/* ==========================================
-   HEADERS
-   ========================================== */
+#main .card-header,
+#main h3,
+#main h4 {
 
-.card-header,
-.table th,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
     background:
         linear-gradient(
             90deg,
-            rgba(3,10,13,.95),
-            rgba(17,32,37,.95),
-            rgba(3,10,13,.95)
+            rgba(3, 10, 13, 0.98),
+            rgba(19, 36, 41, 0.95),
+            rgba(3, 10, 13, 0.98)
         ) !important;
 
-    color: #e2ebed !important;
+    color: #e3ecee !important;
+
+    border-color:
+        rgba(150, 180, 185, 0.30) !important;
 
     text-shadow:
         0 2px 4px #000;
 }
 
 
-/* ==========================================
+/* ==========================================================
    LINKS
-   ========================================== */
+   ========================================================== */
 
 a {
-    color: #d8e6e8 !important;
+    color: #d6e4e7 !important;
 }
 
 a:hover {
     color: #ffffff !important;
 
     text-shadow:
-        0 0 8px rgba(190,220,225,.75);
+        0 0 8px rgba(190, 215, 220, 0.75);
 }
 
 
-/* ==========================================
+/* ==========================================================
    BUTTONS
-   ========================================== */
+   ========================================================== */
 
 .btn,
 button {
+
     background:
         linear-gradient(
-            rgba(27,44,49,.95),
-            rgba(5,13,17,.95)
+            rgba(25, 43, 48, 0.95),
+            rgba(5, 13, 17, 0.95)
         ) !important;
 
-    border-color:
-        rgba(160,185,190,.4) !important;
+    border:
+        1px solid rgba(150, 180, 185, 0.40) !important;
 
-    color: #e1eaec !important;
+    color: #e0e9eb !important;
 }
 
 .btn:hover,
 button:hover {
+
     background:
         linear-gradient(
-            rgba(45,63,68,.95),
-            rgba(7,17,21,.95)
+            rgba(45, 65, 70, 0.95),
+            rgba(7, 18, 22, 0.95)
         ) !important;
+
+    color: #ffffff !important;
 }
 
 
-/* ==========================================
+/* ==========================================================
    WOLF CARDS
-   ========================================== */
+   ========================================================== */
 
-.wolf-card,
-.wolf,
-.wolfcard {
+#main .wolf,
+#main .wolf-card,
+#main .wolfcard {
+
     background:
-        rgba(5,13,17,.88) !important;
+        rgba(4, 13, 17, 0.90) !important;
 
     border-color:
-        rgba(150,175,180,.3) !important;
+        rgba(145, 175, 180, 0.30) !important;
 }
 
 
-/* ==========================================
+/* ==========================================================
+   TABLE STRIPES
+   ========================================================== */
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background:
+        rgba(10, 24, 28, 0.70) !important;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background:
+        rgba(4, 13, 17, 0.70) !important;
+}
+
+
+/* ==========================================================
+   INPUTS
+   ========================================================== */
+
+input,
+textarea,
+select {
+
+    background:
+        rgba(3, 11, 14, 0.90) !important;
+
+    border:
+        1px solid rgba(145, 175, 180, 0.35) !important;
+
+    color:
+        #dce6e8 !important;
+}
+
+
+/* ==========================================================
    SCROLLBAR
-   ========================================== */
+   ========================================================== */
 
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #050c0f;
+    background: #040b0e;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #34484e;
+    background: #40565c;
 
-    border: 2px solid #071014;
+    border:
+        2px solid #071014;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #60777d;
+    background: #70878c;
 }
 
 
-/* ==========================================
-   SUBTLE STORM OVERLAY
-   ========================================== */
+/* ==========================================================
+   IMAGE COLOR
+   ========================================================== */
 
-#page::before {
+#main img {
+    filter:
+        saturate(0.88)
+        contrast(1.04);
+}
+
+
+/* ==========================================================
+   STORMY DARK OVERLAY
+   ========================================================== */
+
+body::before {
+
     content: "";
 
     position: fixed;
@@ -287,9 +420,9 @@ button:hover {
 
     background:
         linear-gradient(
-            rgba(130,155,160,.025),
-            rgba(0,0,0,.12)
+            rgba(80, 105, 110, 0.025),
+            rgba(0, 0, 0, 0.18)
         );
 
-    z-index: 9999;
+    z-index: -1;
 }
